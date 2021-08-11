@@ -1,0 +1,78 @@
+Aqui iran los atributos de CSS y su funcion:
+
+
+Existen 6 tipos de Selectores
+-------------------------------
+/* Selector Universal*/
+* a{
+    color: red;
+}
+
+/*Selector de Tipo*/
+h1{
+    color: blue;  
+}
+
+/*Selector por clase*/
+.titulo2{
+    color: rgb(175, 218, 21);
+}
+
+
+/*Selector por id*/
+#elemento-id-titulo{
+    color: orange;
+}
+
+/*Selector por Atributo*/
+[atributo1="at1"]{
+    color:green;
+}
+
+/*Selector por Descendiente*/
+h2 p{
+    color: yellow;
+}
+-----------------------------------
+
+Esta metodologia es la mas usada pero exiten muchas
+
+/*METODOLOGIA BEM */
+.contact-form{
+    background-color:yellow;
+}
+
+.contact-form__input--active{
+    color: red;
+}
+
+.contact-form__input{
+    color: green;
+}
+----------------------------------------------
+ATRIBUTOS:              
+width: 520px;               =ANCHO 
+height:520px;               =ALTO
+background:yellow;          =FONDO
+position: relative;         =POSICION TOMA EL ORDEN DE LOS DIVS
+padding:100px;              = separa lo que contenga lo separa del padre arriba,abajo derecha,izquierda
+margin: 50px auto;          =MARGEN auto se refiere que se pondran en medio horizontalmente
+margin-top: 50px;           =margen hacia arriba 
+border: 3px solid black;    =borde de 3 pixeles tipo solido color negro
+
+position: absolute;         =posicion toma la caja padre 
+left: 0;                    = hacia la izquierda muevelo esquina izquierda
+right=0;                    = hacia la derecha muevelo esquina derecha
+bottom: 0;                  = hacia abajo muevelo esquina de abajo
+top:0;                      = hacia arriba muevelo esquina de arrib
+
+tambien se puede poner con pixeles
+left:200px; right:120px;etc..
+
+
+text-align: center;         = centra el texto 
+
+font-size: 40px;            = tamaño de letra
+font-weight:100;            = ancho de letra
+
+position: fixed;            = Sirve para poner algo fijo y que se mueva con el scroll se usa en navs o en anuncios
