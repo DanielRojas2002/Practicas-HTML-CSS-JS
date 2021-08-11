@@ -79,3 +79,13 @@ bottom: 0;                  = hacia abajo muevelo esquina de abajo
 top:0;                      = hacia arriba muevelo esquina de arriba
     tambien se puede poner con pixeles
     left:200px; right:120px;etc..
+
+
+DISPLAY:
+Es la manera de compartarse de las cajas
+
+DISPLAY:Block; seria tipo bloque como los h1 etc toma todo el renglon 
+DISPLAY:inline seria tipo linea estos se adaptan al contenido como el p 
+DISPLAY :inline-block le podemos dar un ancho y alto y se adapta al contenido puedes poner imagenes y a lado texto
+DISPLAY : FLEX
+DISPLAY:GRID
