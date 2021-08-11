@@ -1,0 +1,458 @@
+
+
+.tablero{
+    background: yellow;
+    
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+div{
+    
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+.tablero__caja1{
+    background:black;
+    position: absolute;
+}
+
+.tablero__caja2{
+    background:white;
+    position: absolute;
+    left: 50px;
+}
+
+
+.tablero__caja3{
+    background:black;
+    position: absolute;
+    left:100px;
+}
+
+.tablero__caja4{
+    background:white;
+    position: absolute;
+    left: 150px;
+}
+
+.tablero__caja5{
+    background:black;
+    position: absolute;
+    left:200px;
+}
+
+.tablero__caja6{
+    background:white;
+    position: absolute;
+    left: 250px;
+}
+.tablero__caja7{
+    background:black;
+    position: absolute;
+    left:300px;
+}
+
+.tablero__caja8{
+    background:white;
+    position: absolute;
+    left: 350px;
+}
+
+.tablero__caja9{
+    background:white;
+    position: absolute;
+    top: 50px;
+}
+
+.tablero__caja10{
+    background:black;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.tablero__caja11{
+    background:white;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.tablero__caja12{
+    background:black;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.tablero__caja13{
+    background:white;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.tablero__caja14{
+    background:black;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+
+.tablero__caja15{
+    background:white;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+.tablero__caja16{
+    background:black;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+}
+
+.tablero__caja17{
+    background:black;
+    position: absolute;
+    top: 100px;
+}
+
+.tablero__caja18{
+    background:white;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+
+.tablero__caja19{
+    background:black;
+    position: absolute;
+    top: 100px;
+    left:100px;
+}
+
+.tablero__caja20{
+    background:white;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.tablero__caja21{
+    background:black;
+    position: absolute;
+    top: 100px;
+    left:200px;
+}
+
+.tablero__caja22{
+    background:white;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+.tablero__caja23{
+    background:black;
+    position: absolute;
+    top: 100px;
+    left:300px;
+}
+.tablero__caja24{
+    background:white;
+    position: absolute;
+    top: 100px;
+    left:350px;
+}
+
+
+.tablero__caja25{
+    background:white;
+    position: absolute;
+    top: 150px;
+}
+
+.tablero__caja26{
+    background:black;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.tablero__caja27{
+    background:white;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.tablero__caja28{
+    background:black;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.tablero__caja29{
+    background:white;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+.tablero__caja30{
+    background:black;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+
+.tablero__caja31{
+    background:white;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+.tablero__caja32{
+    background:black;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+
+
+
+.tablero__caja33{
+    background:black;
+    position: absolute;
+    top: 200px;
+}
+
+.tablero__caja34{
+    background:white;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+
+.tablero__caja35{
+    background:black;
+    position: absolute;
+    top: 200px;
+    left:100px;
+}
+
+.tablero__caja36{
+    background:white;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+}
+
+.tablero__caja37{
+    background:black;
+    position: absolute;
+    top: 200px;
+    left:200px;
+}
+
+.tablero__caja38{
+    background:white;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+.tablero__caja39{
+    background:black;
+    position: absolute;
+    top: 200px;
+    left:300px;
+}
+.tablero__caja40{
+    background:white;
+    position: absolute;
+    top: 200px;
+    left:350px;
+}
+
+
+.tablero__caja41{
+    background:white;
+    position: absolute;
+    top: 250px;
+}
+
+.tablero__caja42{
+    background:black;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+
+.tablero__caja43{
+    background:white;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.tablero__caja44{
+    background:black;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+
+.tablero__caja45{
+    background:white;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.tablero__caja46{
+    background:black;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.tablero__caja47{
+    background:white;
+    position: absolute;
+    top: 250px;
+    left: 300px;
+}
+
+.tablero__caja48{
+    background:black;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+}
+
+
+.tablero__caja49{
+    background:black;
+    position: absolute;
+    top: 300px;
+}
+
+.tablero__caja50{
+    background:white;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+
+.tablero__caja51{
+    background:black;
+    position: absolute;
+    top: 300px;
+    left:100px;
+}
+
+.tablero__caja52{
+    background:white;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+.tablero__caja53{
+    background:black;
+    position: absolute;
+    top: 300px;
+    left:200px;
+}
+
+.tablero__caja54{
+    background:white;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+.tablero__caja55{
+    background:black;
+    position: absolute;
+    top: 300px;
+    left:300px;
+}
+.tablero__caja56{
+    background:white;
+    position: absolute;
+    top: 300px;
+    left:350px;
+}
+
+
+.tablero__caja57{
+    background:white;
+    position: absolute;
+    top: 350px;
+}
+
+.tablero__caja58{
+    background:black;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+.tablero__caja59{
+    background:white;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+.tablero__caja60{
+    background:black;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+
+.tablero__caja61{
+    background:white;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+
+.tablero__caja62{
+    background:black;
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}
+
+.tablero__caja63{
+    background:white;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}
+
+.tablero__caja64{
+    background:black;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}

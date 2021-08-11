@@ -1,0 +1,44 @@
+
+/* Selector Universal*/
+* a{
+    color: red;
+}
+
+/*Selector de Tipo*/
+h1{
+    color: blue;  
+}
+
+/*Selector por clase*/
+.titulo2{
+    color: rgb(175, 218, 21);
+}
+
+
+/*Selector por id*/
+#elemento-id-titulo{
+    color: orange;
+}
+
+/*Selector por Atributo*/
+[atributo1="at1"]{
+    color:green;
+}
+
+/*Selector por Descendiente*/
+h2 p{
+    color: yellow;
+}
+
+/*METODOLOGIA BEM */
+.contact-form{
+    background-color:yellow;
+}
+
+.contact-form__input--active{
+    color: red;
+}
+
+.contact-form__input{
+    color: green;
+}

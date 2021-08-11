@@ -1,0 +1,46 @@
+
+div{
+    height: 140px;
+    width: 160px;
+}
+h1{
+    text-align: center;
+}
+
+/* position relative te ayuda a acomodar basandose en su orden 
+top alto 
+left izquierda*/
+
+/*z-index: valor te ayuda a poner una caja sobre otra cuando usas position relative y top<*/
+
+.caja1{
+    background-color: red;
+    
+}
+
+.caja2{
+    background-color: yellow;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    z-index: 1;
+    
+}
+
+.caja3{
+    background-color:green;
+    position:relative;
+    
+    
+   
+}
+
+.caja4{
+
+    background-color: blue;
+    position: relative;
+    top: -30px;
+    left:50px;
+
+    
+}

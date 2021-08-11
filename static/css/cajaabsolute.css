@@ -1,0 +1,67 @@
+div div{
+    width: 100px;
+    height: 100px;
+    
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+}
+
+.caja-padre{
+    width: 520px;
+    height:520px;
+    background:yellow;
+    position: relative;
+    margin: 50px auto;
+    margin-top: 50px;
+    border: 3px solid black;
+}
+
+
+
+
+.caja-padre__caja1{
+    background: red;
+    position: absolute;
+    left: 0;
+    
+    
+}
+
+.caja-padre__caja2{
+    background: blue;
+    position: absolute;
+    right: 0;
+    
+
+}
+
+.caja-padre__caja3{
+    background:green;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+.caja-padre__caja4{
+    background:purple;
+    position: absolute;
+    bottom: 0;
+}
+
+.caja-padre__caja5{
+    background:orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    
+    
+    
+    
+}

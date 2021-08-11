@@ -1,0 +1,112 @@
+
+
+
+h1{
+    text-align: center;
+}
+
+div div{
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+
+
+.cajita-padre{
+    background:yellow;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    border: 4px solid black;
+}
+
+.cajita-padre__caja1{
+    background:red;
+    position:absolute;
+    left: 0;
+
+}
+
+.cajita-padre__caja2{
+    background:orange;
+    position:absolute;
+    right: 0;
+}
+
+.cajita-padre__caja3{
+    background:blue;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+.cajita-padre__caja4{
+    background:green;
+    position:absolute;
+    bottom: 0;
+}
+.cajita-padre__caja5{
+    background:purple;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    margin: auto
+}
+
+
+.cajarel1,.cajarel2,.cajarel3,.cajarel4,.cajarel5,.cajarel6,.cajarel7,.cajarel8{
+    height: 100px;
+    width:100px;
+    position: relative;
+    text-align: center;
+    
+}
+.cajarel1{
+    background:red;
+    left: 20px;
+
+    
+}
+
+.cajarel2{
+    
+    background:yellow;
+    left:140px;
+
+}
+
+.cajarel3{
+    background:green;
+    left: 270px;
+}
+
+.cajarel4{
+    background:orange;
+    left:140px;
+
+}
+.cajarel5{
+    background:purple;
+    left:20px;
+}
+
+.cajarel6{
+    background: greenyellow;
+    top: -300px;
+    left:500px;
+}
+
+.cajarel7{
+    background:aqua;
+    top: -400px;
+    left:600px;
+}
+
+.cajarel8{
+    background:darkorange;
+    top: -500px;
+    left:700px;
+    
+}
