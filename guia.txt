@@ -63,6 +63,7 @@ text-align: center;         = centra el texto
 font-size: 40px;            = tamaño de letra
 font-weight:100;            = ancho de letra
 overflow :auto; =           = te permite poner un scroll de acuerdo al contenedor auto lo detecta automaticamente
+transition: all 2s;         = Esto hace que todo los atributos se tarden en aparecer haciendo una animacion
 ---------------------------------------------------------------------------------------------------------------------
 
 
@@ -90,5 +91,25 @@ DISPLAY:inline seria tipo linea estos se adaptan al contenido como el p
 DISPLAY :inline-block le podemos dar un ancho y alto y se adapta al contenido puedes poner imagenes y a lado texto
 DISPLAY : FLEX
 DISPLAY:GRID
+-----------------------------------------------------------
+PSEUDOELEMENTOS
 
+a::first-line{                              form::placeholder{}
 
+}
+p::first-letter{                            p::selector{}
+
+}
+
+p::selector{                                p::before{}
+                                            p::after{}
+}
+
+--------------------------------------------------------------------------------
+PSEUDOCLASES
+:hover  = Cuando el mouse este sobre ese elemento
+:link = Cuando no se ha vistado una url 
+:visited = Cuando algo ya esta visitado 
+:active = Cuando se preciona algo
+:focus = Es cuando un input esta enfocado
+----------------------------------------------------------------------------------
