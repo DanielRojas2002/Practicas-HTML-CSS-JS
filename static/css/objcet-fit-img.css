@@ -1,0 +1,16 @@
+
+
+
+.caja1{
+    height:700px;
+    width:600px;
+   
+    
+}
+
+.caja1 img {
+    height:100%;
+    width:100%;
+    border: 5px solid red;
+    object-fit: cover;
+}

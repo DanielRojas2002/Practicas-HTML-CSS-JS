@@ -113,3 +113,6 @@ PSEUDOCLASES
 :active = Cuando se preciona algo
 :focus = Es cuando un input esta enfocado
 ----------------------------------------------------------------------------------
+imagenes 
+object-fit:cover; = la imagen se ajusta al contenido a la caja padre
+        : scale-down = agarra la resolucion mas baja 
