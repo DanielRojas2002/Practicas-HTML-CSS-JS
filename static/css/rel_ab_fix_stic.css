@@ -1,9 +1,9 @@
 
 
-
 h1{
     text-align: center;
 }
+
 
 div div{
     width:100px;
@@ -109,4 +109,23 @@ div div{
     top: -500px;
     left:700px;
     
+}
+.fixedd{
+    background:yellow;
+    position:fixed;
+    text-align: center;
+    z-index: 1;
+ 
+}
+
+.caja-sticky{
+    background:orange ;
+    position:sticky;
+    top:1px;
+    text-align:center;
+    
+}
+
+.article{
+    font-size: 50px;
 }
