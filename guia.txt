@@ -62,6 +62,7 @@ border: 3px solid black;    =borde de 3 pixeles tipo solido color negro
 text-align: center;         = centra el texto 
 font-size: 40px;            = tamaño de letra
 font-weight:100;            = ancho de letra
+overflow :auto; =           = te permite poner un scroll de acuerdo al contenedor auto lo detecta automaticamente
 ---------------------------------------------------------------------------------------------------------------------
 
 
@@ -89,3 +90,5 @@ DISPLAY:inline seria tipo linea estos se adaptan al contenido como el p
 DISPLAY :inline-block le podemos dar un ancho y alto y se adapta al contenido puedes poner imagenes y a lado texto
 DISPLAY : FLEX
 DISPLAY:GRID
+
+
