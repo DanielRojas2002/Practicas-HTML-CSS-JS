@@ -1,0 +1,132 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    border:2px solid black;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    
+    position:fixed;
+    width:100%;
+    background-color:#f5ed09;
+    color:black;
+    text-align: center;
+    padding: 15px;
+    transition: all 2s;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+h1:hover{
+    background-color:#20e619;
+}
+
+h3{
+    padding: 20px;
+    text-align:center;
+}
+
+.caja1{
+   
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 8%;
+    background-color:#f5ed09;
+    height:300px;
+    width:300px;
+    border-radius: 50px;
+    box-shadow:20px 20px 40px 0px #000;
+    transition: all 2s;
+}
+.caja1:hover{
+    background-color:#20e619;
+    border-radius: 100px;
+    
+}
+
+.caja1 a{
+    
+    display:block;
+    width:50%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius:50px;
+    
+    background-color:#20e619;
+}
+
+.caja1 a:hover {
+    display:block;
+    margin: auto;
+    width:50%;
+    margin-top: 20px;
+    background-color:yellow;
+}
+
+.caja1 img{
+    display:block;
+    margin:auto;
+    height:150px;
+    width:150px;
+    border-radius: 80px;
+    object-fit: cover;
+}
+
+.caja2{
+    
+    display: inline-block;
+    margin-left: 18%;
+    margin-top:100px;
+    background-color:#f5ed09;
+    height:300px;
+    width:300px;
+    border-radius: 50px;
+    box-shadow:20px 20px 40px 0px #000;
+    transition: all 2s;
+    margin-bottom: 120px;
+
+}
+
+.caja2:hover{
+    background-color:#20e619;
+    border-radius: 100px;
+}
+
+.caja2 a{
+    
+    display:block;
+    width:50%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius:50px;
+    background-color:#20e619;
+}
+
+.caja2 a:hover {
+    display:block;
+    margin: auto;
+    width:50%;
+    margin-top: 20px;
+    background-color:yellow;
+}
+
+.caja2 img{
+    display:block;
+    margin:auto;
+    height:150px;
+    width:150px;
+    border-radius: 80px;
+    object-fit: cover;
+}
+
