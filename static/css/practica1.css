@@ -1,11 +1,21 @@
 
+/*SELECTOR UNIVERSAL*/
+
+/*Inicializamos el padding en 0 y el margin en 0 y establecemos el tipo del letra*/
 *{
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+/*--------------------------------------------------------*/
 
+/*SELECTORES POR TIPO*/
+
+/*A todos los a(url) le quitamos la linea de abajo 
+le ponemos un borde de 2 px solido de color negro
+el color de la letra sera negro
+y su tipografia sera reboto o sans-serif*/
 a{
     text-decoration: none;
     border:2px solid black;
@@ -13,8 +23,19 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
-    
+
+
+/*A todos los h1 
+le ponemos la posicion fixed que lo que hace es que cuando demos scroll se mueva con nostros a travez de la pagina 
+el tamaño de 100% de la pantalla
+el color de fondo 
+el color de letras
+alineado al cento horizontalmente
+un padding de 15 que es dejar espacios entre las cosas (arriba,abajo,derecha,izquiera
+transition all 2 s esto lo que hace es que se haga una animacion de todos los atributos y se tarden 2 segundos casa uno
+tipo de letra oswal o sans-serif*/
+
+h1{ 
     position:fixed;
     width:100%;
     background-color:#f5ed09;
@@ -23,18 +44,46 @@ h1{
     padding: 15px;
     transition: all 2s;
     font-family: 'Oswald', sans-serif;
-    
 }
 
-h1:hover{
-    background-color:#20e619;
-}
-
+/*A todos los h3 
+ponle un padding de 20 px
+y alinealo al centro horizontalmente*/
 h3{
     padding: 20px;
     text-align:center;
 }
 
+/*--------------------------------------------------------*/
+
+/*SELECTOR POR TIPO Y PSEUDOCLASES*/
+
+
+/*Aqui a todos los h1 cuando este el mouse sobre ellos 
+cambiale el colo de fondo a:*/
+
+h1:hover{
+    background-color:#20e619;
+}
+
+
+
+/*--------------------------------------------------------*/
+
+
+/*SELECTOR POR CLASES*/
+
+
+/*Creamos nuestra primera clase 
+tiene un display inline-block lo que quiere decire que se comporta como inline pero se le puede modificar sus dimensiones
+margin-top 150 px esto quiere decir que agregue un margen hacia arrba afuera de la caja
+margin-left 8% esto quiere decir que agregue un margen hacia la izquierda afuera de la caja pero el 8% de la pantalla
+height 300 px es el alto de la caja
+width 300 px es el ancho de la caja
+border-radius 50 px esto quiere decir que lo redondemos 50 pixeles
+box-shodow con esto le agregamos sombra de color negro
+transition all 2 s esto lo que hace es que se haga una animacion de todos los atributos y se tarden 2 segundos casa uno
+*/
 .caja1{
    
     display: inline-block;
@@ -47,41 +96,8 @@ h3{
     box-shadow:20px 20px 40px 0px #000;
     transition: all 2s;
 }
-.caja1:hover{
-    background-color:#20e619;
-    border-radius: 100px;
-    
-}
 
-.caja1 a{
-    
-    display:block;
-    width:50%;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    border-radius:50px;
-    
-    background-color:#20e619;
-}
-
-.caja1 a:hover {
-    display:block;
-    margin: auto;
-    width:50%;
-    margin-top: 20px;
-    background-color:yellow;
-}
-
-.caja1 img{
-    display:block;
-    margin:auto;
-    height:150px;
-    width:150px;
-    border-radius: 80px;
-    object-fit: cover;
-}
-
+/*Esto es parecido a lo de arriba a lo de .caja1 solo que le cambie las posiciones y los tamaños */
 .caja2{
     
     display: inline-block;
@@ -97,12 +113,37 @@ h3{
 
 }
 
-.caja2:hover{
+/*--------------------------------------------------------*/
+
+
+/*SELECTOR POR CLASES Y PSEUDOCLASES*/
+
+/*cuando la clase pase el mouse sobre la clase 
+cambiale el color de FONDO
+y la circunfernecia */
+
+
+.caja1:hover{
     background-color:#20e619;
     border-radius: 100px;
 }
 
-.caja2 a{
+.caja2:hover{
+    background-color:#20e619;
+    border-radius: 100px;
+}
+/*--------------------------------------------------------*/
+
+/*SELECTOR POR CLASE Y ETIQUETA*/
+
+/*cuando la clase y este esta etiqueta
+cambiale el display a block= toda la pantalla horizontalmente 
+el ancho sera al 50 % 
+agregale un margin auto que lo que dice es que se centre horizontalmente 
+text-align centra las letras horizontalmente 
+agregale una circunferencia
+y cambiale el color de fondo a:*/
+.caja1 a{
     
     display:block;
     width:50%;
@@ -113,12 +154,30 @@ h3{
     background-color:#20e619;
 }
 
-.caja2 a:hover {
+.caja2 a{
     display:block;
-    margin: auto;
     width:50%;
+    margin: auto;
     margin-top: 20px;
-    background-color:yellow;
+    text-align: center;
+    border-radius:50px;
+    background-color:#20e619;
+}
+
+/* cuando la clase esta la etiqueta img
+ponle el display block 
+centralo horizontalmente 
+altura
+anchura
+circunferencia
+object-fit :cover se refiere a que se adapte la imagen al contendor */
+.caja1 img{
+    display:block;
+    margin:auto;
+    height:150px;
+    width:150px;
+    border-radius: 80px;
+    object-fit: cover;
 }
 
 .caja2 img{
@@ -129,4 +188,33 @@ h3{
     border-radius: 80px;
     object-fit: cover;
 }
+
+/*--------------------------------------------------------*/
+
+
+/*SELECTOR POR CLASES ETIQUETA Y PSEUDOCLASES*/
+
+/* cuando la clase la etiqueta a este el mouse sobre ella 
+cambiale el display 
+el margin 
+el margin-top 
+y el fondo */
+
+.caja1 a:hover {
+    display:block;
+    margin: auto;
+    width:50%;
+    margin-top: 20px;
+    background-color:yellow;
+}
+
+.caja2 a:hover {
+    display:block;
+    margin: auto;
+    width:50%;
+    margin-top: 20px;
+    background-color:yellow;
+}
+
+/*--------------------------------------------------------*/
 
