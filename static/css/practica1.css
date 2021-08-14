@@ -101,15 +101,15 @@ transition all 2 s esto lo que hace es que se haga una animacion de todos los at
 .caja2{
     
     display: inline-block;
-    margin-left: 18%;
-    margin-top:100px;
+    margin-left: 8%;
+    margin-top:80px;
     background-color:#f5ed09;
     height:300px;
     width:300px;
     border-radius: 50px;
     box-shadow:20px 20px 40px 0px #000;
     transition: all 2s;
-    margin-bottom: 120px;
+    
 
 }
 
@@ -123,15 +123,12 @@ cambiale el color de FONDO
 y la circunfernecia */
 
 
-.caja1:hover{
+.caja1:hover,.caja2:hover{
     background-color:#20e619;
     border-radius: 100px;
 }
 
-.caja2:hover{
-    background-color:#20e619;
-    border-radius: 100px;
-}
+
 /*--------------------------------------------------------*/
 
 /*SELECTOR POR CLASE Y ETIQUETA*/
@@ -143,7 +140,7 @@ agregale un margin auto que lo que dice es que se centre horizontalmente
 text-align centra las letras horizontalmente 
 agregale una circunferencia
 y cambiale el color de fondo a:*/
-.caja1 a{
+.caja1 a,.caja2 a{
     
     display:block;
     width:50%;
@@ -154,15 +151,7 @@ y cambiale el color de fondo a:*/
     background-color:#20e619;
 }
 
-.caja2 a{
-    display:block;
-    width:50%;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    border-radius:50px;
-    background-color:#20e619;
-}
+
 
 /* cuando la clase esta la etiqueta img
 ponle el display block 
@@ -171,16 +160,7 @@ altura
 anchura
 circunferencia
 object-fit :cover se refiere a que se adapte la imagen al contendor */
-.caja1 img{
-    display:block;
-    margin:auto;
-    height:150px;
-    width:150px;
-    border-radius: 80px;
-    object-fit: cover;
-}
-
-.caja2 img{
+.caja1 img,.caja2 img{
     display:block;
     margin:auto;
     height:150px;
@@ -200,7 +180,7 @@ el margin
 el margin-top 
 y el fondo */
 
-.caja1 a:hover {
+.caja1 a:hover,.caja2 a:hover{
     display:block;
     margin: auto;
     width:50%;
@@ -208,13 +188,70 @@ y el fondo */
     background-color:yellow;
 }
 
-.caja2 a:hover {
-    display:block;
-    margin: auto;
-    width:50%;
-    margin-top: 20px;
-    background-color:yellow;
-}
 
 /*--------------------------------------------------------*/
+
+@media (min-width:1200px){
+    .caja1{
+   
+        display: inline-block;
+        margin-top: 150px;
+        margin-left: 8%;
+        background-color:#f5ed09;
+        height:300px;
+        width:300px;
+        border-radius: 50px;
+        box-shadow:20px 20px 40px 0px #000;
+        transition: all 2s;
+    }
+
+    .caja2{
+    
+        display: inline-block;
+        margin-left: 18%;
+        margin-top:100px;
+        background-color:#f5ed09;
+        height:300px;
+        width:300px;
+        border-radius: 50px;
+        box-shadow:20px 20px 40px 0px #000;
+        transition: all 2s;
+        margin-bottom: 120px;
+    
+    }
+
+    .caja1:hover,.caja2:hover{
+        background-color:#20e619;
+        border-radius: 100px;
+    }
+    
+    .caja1 a,.caja2 a{
+    
+        display:block;
+        width:50%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        border-radius:50px;
+        background-color:#20e619;
+    }
+
+    .caja1 img,.caja2 img{
+        display:block;
+        margin:auto;
+        height:150px;
+        width:150px;
+        border-radius: 80px;
+        object-fit: cover;
+    }
+
+    .caja1 a:hover,.caja2 a:hover{
+        display:block;
+        margin: auto;
+        width:50%;
+        margin-top: 20px;
+        background-color:yellow;
+    }
+
+}
 
