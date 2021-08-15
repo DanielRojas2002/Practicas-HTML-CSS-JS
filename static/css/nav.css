@@ -1,0 +1,110 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.nav_ul_responsive{
+    display:none;
+}
+
+
+.nav{
+    background:green;
+}
+
+.nav__li{
+    padding:15px;
+    display:inline-block;
+}
+
+.nav__li a{
+    text-decoration:none;
+    color: white;
+}
+
+.nav__li i{
+    
+    color: red;
+    text-align:right;
+    margin-right:10px;
+    
+}
+
+.nav__li:hover{
+    background: black;
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.nav__li:hover >a{
+    color:yellow;
+}
+
+.nav__li:hover >i{
+    color:yellow;
+}
+
+@media only screen and (max-width:550px){
+
+    .nav__ul{
+        display: none
+    }
+    
+    .nav_ul_responsive{
+        display: block;
+        position: absolute;
+        width:100%;
+        height:100%;
+        background: rgb(20, 241, 131);
+
+    }
+
+    .button_container{
+        background:red;
+        padding: 30px;
+    }
+
+
+    .nav_responsive_button{
+        float: right;
+        font-size:20px;
+        margin-bottom: 50px;
+    }
+    
+    .nav_li_responsive{
+        padding: 20px;
+    }
+
+    .nav_li_responsive a{
+        text-decoration:none;
+        color: white;
+    }
+    .nav_li_container li{
+        width: 90%;
+    }
+
+    .nav_li_responsive i{
+    
+        color: red;
+        text-align:center;
+        margin-right:10px;
+        
+    }
+    
+    .nav_li_responsive:hover{
+        background: black;
+        border-radius: 20px;
+        transition: all .5s;
+    }
+    
+    .nav_li_responsive:hover >a{
+        color:yellow;
+    }
+    
+    .nav_li_responsive:hover >i{
+        color:yellow;
+    }
+    
+
+}
