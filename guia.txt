@@ -116,3 +116,35 @@ PSEUDOCLASES
 imagenes 
 object-fit:cover; = la imagen se ajusta al contenido a la caja padre
         : scale-down = agarra la resolucion mas baja 
+
+----------------------------------------------------------
+FLEX:
+display:flex default row
+flex-direction:row;            =
+flex-direction:row-reverse; =
+flex-direction:column 
+flex-direction:column-reverse; =
+
+flex-wrap:wrap;  Te respeta el tamamo de cada caja si caben lo ponen de seguido si no caben te lo pone abajo
+
+justify-content: justifica el contenido en "x""
+center
+space-around
+space-between
+space-evently 
+
+align-items : justifica el contenido en ""y" cuando el contenido es solo una linea en 
+center 
+flex-end 
+flex-start 
+baseline
+
+align-content : justifica el contenido en y cuando el contenido es mas de una linea
+center 
+flex-end 
+flex-start 
+baseline
+
+
+items:
+flex-grow:1; se reparte el espacio sobrante entre la cantidad de cajs
