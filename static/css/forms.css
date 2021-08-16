@@ -1,31 +1,33 @@
 
 
-*{
-    padding: 0;
-    margin: 0;
-}
-
-
-.container{
-    background: gray;
-    margin: auto;
-    height:400px;
-    width:800px;
-}
-
-.contaniner_inputs{
+.flex-container {
     display: flex;
-    flex-direction: column;
-   
-    
-    background: red;
-    width:50%;
-    height:400px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background:red;
+    margin:50px 30px;
+
+}
+
+
+.form{
+    min-width: 400px;
+    flex-grow: 1;
+    text-align: center;
+    background:yellow;
+    padding:30px;
+}
+
+
+
+.img{
+    margin-left: 10px;
+    flex-grow: 1;
 }
 
 .input{
-    
-    margin:20px;
-    height:40px;
-    width:90%;
+    width: 100%;
+    padding:7px;
+    margin: 10px 0;
 }
