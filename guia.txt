@@ -148,3 +148,7 @@ baseline
 
 items:
 flex-grow:1; se reparte el espacio sobrante entre la cantidad de cajs
+
+
+-----------------------------------------------------------------------------------------
+linear-gradient(to bottom,trasnparent,red);
