@@ -1,0 +1,150 @@
+body{
+    
+    background: #59AE3A;
+}
+
+h1{
+   
+    text-align: center;
+    
+}
+
+
+
+.container{
+    margin: auto;
+    height:150px;
+    width:200px;
+    background: #fff;
+    border: 4px solid #fff;
+    
+}
+
+.container-inputs{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+    
+    
+}
+
+.inputs{
+    height:20px;
+    width:60%;
+    padding:8px;
+    margin: 20px;
+    border:none;
+    border:3px solid black;
+   
+}
+
+.inputs:focus{
+    background:linear-gradient(to bottom,transparent,#59AE3A);
+
+}
+
+.boton{
+    margin-top:30px;
+    padding:15px;
+    width: 50%;
+    color:#fff;
+    background:green;
+    box-shadow:20px 20px 40px 0px #000;
+    transition: all 1s;
+    border: none;
+}
+
+.boton:hover{
+    background:linear-gradient(to bottom,yellow,green);
+    border-radius: 30px;
+    color:#000;
+    border: none;
+}
+
+.container-img{
+    margin:15px;
+    
+    text-align: center;
+    border-radius: 150px;
+    background:#59AE3A;
+    
+}
+
+img{
+    margin:20px;
+    height: 120px;
+    width:120px;
+    border-radius: 100px;
+    object-fit:cover;
+}
+
+@media only screen and (max-width:900){
+    .container{
+        margin: auto;
+        height:550px;
+        width:600px;
+        background: #fff;
+        border: 4px solid #fff;
+        
+    }
+    
+    .container-inputs{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        
+        
+        
+    }
+    
+    .inputs{
+        height:20px;
+        width:60%;
+        padding:8px;
+        margin: 20px;
+        border:none;
+        border:3px solid black;
+       
+    }
+    
+    .inputs:focus{
+        background:linear-gradient(to bottom,transparent,#59AE3A);
+    
+    }
+    
+    .boton{
+        margin-top:30px;
+        padding:15px;
+        width: 50%;
+        color:#fff;
+        background:green;
+        box-shadow:20px 20px 40px 0px #000;
+        transition: all 1s;
+        border: none;
+    }
+    
+    .boton:hover{
+        background:linear-gradient(to bottom,yellow,green);
+        border-radius: 30px;
+        color:#000;
+        border: none;
+    }
+    
+    .container-img{
+        margin:15px;
+        
+        text-align: center;
+        border-radius: 150px;
+        background:#59AE3A;
+        
+    }
+    
+    img{
+        margin:20px;
+        height: 120px;
+        width:120px;
+        border-radius: 100px;
+        object-fit:cover;
+    }
+}
