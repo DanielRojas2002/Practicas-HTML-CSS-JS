@@ -13,8 +13,8 @@ h1{
 
 .container{
     margin: auto;
-    height:150px;
-    width:200px;
+    height:550px;
+    width:300px;
     background: #fff;
     border: 4px solid #fff;
     
@@ -79,7 +79,7 @@ img{
     object-fit:cover;
 }
 
-@media only screen and (max-width:900){
+@media only screen and (min-width:700px){
     .container{
         margin: auto;
         height:550px;
