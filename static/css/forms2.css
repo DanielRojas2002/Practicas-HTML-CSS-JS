@@ -1,0 +1,47 @@
+
+
+.container-flex{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:50px ;
+    margin-bottom: 50px;
+    height:800px;
+    width:800px;
+    background: silver;
+}
+
+.container-inputs{
+    overflow :auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background:gold;
+    height:600px;
+    width:600px;
+
+}
+
+.inputs{
+    height:20px;
+    width:70%;
+    padding:8px;
+    margin: 10px;
+    border:none;
+    border:3px solid black
+}
+
+[type="password"]:focus{
+    color:green;
+}
+
+.inputs:focus{
+    background:black;
+    color:white;
+    border:none;
+    border:3px solid white;
+}
+
