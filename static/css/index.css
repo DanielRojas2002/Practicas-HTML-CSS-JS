@@ -1,0 +1,46 @@
+
+h1{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin: 140px;
+}
+
+p{
+    text-align: center;
+}
+
+.contenedor{
+    display:flex;
+    justify-content:space-around;
+    
+    
+}
+
+
+.contenedor-flex-caja{
+    
+    
+    height:200px;
+    width: 250px;
+    background-color: yellow;
+}
+
+.contenedor-caja{
+    
+    margin:auto;
+    width: 100px;
+    height:100px;
+    background:green;
+}
+
+
+img{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    object-fit:cover
+}
+
