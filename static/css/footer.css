@@ -259,6 +259,7 @@ p{
     }
     .ahover:hover{
         box-shadow: 20px 20px 20px 0 #000;
+        background: #78319B;
 
     }
 }
