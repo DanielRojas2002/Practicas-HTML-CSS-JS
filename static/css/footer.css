@@ -1,8 +1,21 @@
 body{
-    background:black;
+    background:#1E0D26;
 }
 
-h3{
+.contenedor-2 h3{
+    text-align: center;
+    color: #000;
+}
+
+.h3-1{
+    text-align: center;
+    color: #000;
+}
+.ahover:hover{
+    box-shadow: 20px 20px 20px 0 #000;
+
+}
+.h3{
     text-align: center;
     color: #fff;
 }
@@ -11,124 +24,30 @@ p{
     color:#fff;
 }
 
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    background: red;
-    height:1180px;
-    width:250px;
-    margin: auto;
-    margin-top:50px;
-    border-radius:30px;
-    border:3px solid #000
-}
-
-.contenedor-2{
-    margin:auto;
-    background:yellow;
-    height:400px;
-    width: 200px;
-
-    margin-top: 40px ;
-    margin-bottom: 40px;
-} 
 
 
-
-
-.contenedor-img{
-    display:flex;
-    flex-direction:column;
-    
-    object-fit:cover;
-    
-
-}
-.contenedor-img img{
-    margin: auto;
-    width:50%;
-    height:100%;
-}
-
-.contenedor-img p{
-    text-align: center;
-}
-
-
-.contenedor-2-2{
-   
-    background: orange;
-    height:250px;
-    width:100%;
-    
-}
-
-.contenedor-icon{
-    display: block;
-    
-   
-}
-
-a img{
-    margin-left: 10px;
-    height:80px;
-    width:80px;
-    margin-bottom: 10px;
-}
-
-
-.contenedor-3{
-    display:flex;
-    flex-direction: column;
-    background:black;
-    height:80px;
-    width:80%;
-    margin: auto;
-    
-}
-
-.contenedor-3-1{
-   
-    background: purple;
-    height:200px;
-    width:100%;
-}
-
-.contenedor-3-1 p{
-   
-    text-align: center;
-}
-
-
-
-.contenedor-3-2{
-    
-    background: rgb(209, 212, 18);
-    height:200px;
-    width:100%;
-   
-}
-
-.contenedor-3-2-img img{
-    margin:10px 50px;
-    height:100px;
-    width:100px;
-   
-}
-
-.contenedor-3-2 p{
-    
-    text-align: center;
-}
 
 
 
 
 
 @media only screen and (min-width: 1200px){
+    .h3-1{
+        text-align: center;
+        color: #000;
+    }
+    .h3{
+        text-align: center;
+        color: red;
+    }
+
+    .contenedor-img p{
+        text-align: center;
+    }
+    
     .contenedor{
-        background: red;
+        display:block;
+        background: #78319B;
         height:380px;
         width:1200px;
         margin: auto;
@@ -148,10 +67,11 @@ a img{
     } 
 
     .contenedor-2-1{
-        background: blue;
+        background: #000;
         height:100%;
         width:50%;
         margin-right: 20px;
+       
     }
 
     .contenedor-img{
@@ -174,7 +94,7 @@ a img{
     }
 
     .contenedor-2-2{
-        background: orange;
+        background: #fff;
         height:100%;
         width:50%;
     }
@@ -189,6 +109,8 @@ a img{
     }
 
     a img{
+        border-radius: 70px;
+        border: 5px solid #000;
         height:100px;
         width:100px;
     }
@@ -197,35 +119,36 @@ a img{
     .contenedor-3{
         display:flex;
         flex-direction: row;
-        background:black;
         height:80px;
-        width:1100px;
-        margin: auto;
+        width:1110px;
+       
         
     }
 
     .contenedor-3-1{
         margin-right: 20px;
-        background: purple;
+        background: #fff;
         height:100%;
         width:70%;
+        margin-right: 150px;
     }
 
     .contenedor-3-1 p{
         text-align: center;
+        color: #000;
     }
 
     .contenedor-3-2{
         display: flex;
         flex-direction: row;
-        background: rgb(209, 212, 18);
+        background: #000;
         height:100%;
         width:30%;
     }
 
     .contenedor-3-2-img img{
         margin-left: 10px;
-        
+        margin-top: 10px;
         height:80%;
         width:80%;
     }
@@ -233,5 +156,12 @@ a img{
     .contenedor-3-2 p{
         margin-left: 20px;
         text-align: center;
+    }
+    .overflow{
+        overflow:auto ;
+    }
+    .ahover:hover{
+        box-shadow: 20px 20px 20px 0 #000;
+
     }
 }
