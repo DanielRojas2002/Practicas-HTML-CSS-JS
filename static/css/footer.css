@@ -2,27 +2,96 @@ body{
     background:#1E0D26;
 }
 
-.contenedor-2 h3{
-    text-align: center;
-    color: #000;
+
+.contenedor{
+    display:none
 }
 
-.h3-1{
-    text-align: center;
-    color: #000;
+.contenedor-cel{
+    display:flex;
+    flex-direction:column;
+    align-items: center; 
+    background: #78319B;
+    height:880px;
+    margin: auto;
+    border-radius:30px;
+    border:3px solid rgb(39, 30, 30);
+    
 }
-.ahover:hover{
-    box-shadow: 20px 20px 20px 0 #000;
 
+.contenedor-img{
+    object-fit:cover;
 }
-.h3{
-    text-align: center;
+
+
+.contenedor-img img{
+    border-radius: 100px;
+    margin-bottom: 50px;
+ 
+}
+
+.contenedor-cel p{
+    text-align:center;
     color: #fff;
 }
 
-p{
-    color:#fff;
+.h3{
+    text-align:center;
+    color: #fff;
 }
+
+.h3-1{
+    text-align:center;
+    color: #fff;
+}
+
+a img{
+    border-radius: 70px;
+    border: 5px solid #000;
+    height:50px;
+    width:50px;
+}
+
+.contenedor-3-2-img {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contenedor-3-2-img img{
+    margin:auto;
+
+    height:150px;
+    width:150px;
+    
+}
+
+hr{
+    color:#000;
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+.ahover:hover{
+    box-shadow: 20px 20px 20px 0 #000;
+    background: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -32,6 +101,32 @@ p{
 
 
 @media only screen and (min-width: 1200px){
+
+    .contenedor-cel{
+        display:none;
+    }
+
+    .contenedor-2 h3{
+        text-align: center;
+        color: #000;
+    }
+    
+    .h3-1{
+        text-align: center;
+        color: #fff;
+    }
+    .ahover:hover{
+        box-shadow: 20px 20px 20px 0 #000;
+    
+    }
+    .h3{
+        text-align: center;
+        color: #fff;
+    }
+    
+    p{
+        color:#fff;
+    }
     .h3-1{
         text-align: center;
         color: #000;
@@ -114,6 +209,8 @@ p{
         height:100px;
         width:100px;
     }
+
+    
 
 
     .contenedor-3{
