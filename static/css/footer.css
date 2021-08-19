@@ -1,112 +1,237 @@
-
+body{
+    background:black;
+}
 
 h3{
     text-align: center;
     color: #fff;
 }
 
-
 p{
     color:#fff;
 }
 
 .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     background: red;
-    height:380px;
-    width:1200px;
+    height:1180px;
+    width:250px;
     margin: auto;
-    margin-top:160px;
+    margin-top:50px;
     border-radius:30px;
     border:3px solid #000
 }
 
 .contenedor-2{
-    display: flex;
+    margin:auto;
     background:yellow;
-    height:200px;
-    width: 1100px;
-   
-    margin: 40px 40px;
+    height:400px;
+    width: 200px;
+
+    margin-top: 40px ;
+    margin-bottom: 40px;
 } 
 
-.contenedor-2-1{
-    background: blue;
-    height:100%;
-    width:50%;
-}
+
+
 
 .contenedor-img{
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    flex-direction:column;
     
-    height:60%;
-    width:100%;
     object-fit:cover;
-  
+    
+
 }
-
-
 .contenedor-img img{
-    margin-left: 40px;
-    width:20%;
+    margin: auto;
+    width:50%;
     height:100%;
-    margin-right: 20px;
 }
+
+.contenedor-img p{
+    text-align: center;
+}
+
 
 .contenedor-2-2{
+   
     background: orange;
-    height:100%;
-    width:50%;
+    height:250px;
+    width:100%;
+    
 }
 
 .contenedor-icon{
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    justify-content:space-between;
-    height:30%;  
+    display: block;
+    
+   
 }
 
 a img{
-    height:100px;
-    width:100px;
+    margin-left: 10px;
+    height:80px;
+    width:80px;
+    margin-bottom: 10px;
 }
 
 
 .contenedor-3{
     display:flex;
-    background:palevioletred;
+    flex-direction: column;
+    background:black;
     height:80px;
-    width:1100px;
+    width:80%;
     margin: auto;
-    margin: 40px ;
+    
 }
 
 .contenedor-3-1{
+   
     background: purple;
-    height:100%;
-    width:70%;
+    height:200px;
+    width:100%;
 }
 
 .contenedor-3-1 p{
+   
     text-align: center;
 }
 
+
+
 .contenedor-3-2{
-    display: flex;
+    
     background: rgb(209, 212, 18);
-    height:100%;
-    width:30%;
+    height:200px;
+    width:100%;
+   
 }
 
 .contenedor-3-2-img img{
-    margin-left: 20px;
-    
-    height:100%;
-    width:80%;
+    margin:10px 50px;
+    height:100px;
+    width:100px;
+   
 }
 
 .contenedor-3-2 p{
-    margin-left: 20px;
+    
     text-align: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px){
+    .contenedor{
+        background: red;
+        height:380px;
+        width:1200px;
+        margin: auto;
+        margin-top:160px;
+        border-radius:30px;
+        border:3px solid #000
+    }
+
+    .contenedor-2{
+        display: flex;
+        flex-direction: row;
+        background:black;
+        height:200px;
+        width: 1100px;
+    
+        margin: 40px 40px;
+    } 
+
+    .contenedor-2-1{
+        background: blue;
+        height:100%;
+        width:50%;
+        margin-right: 20px;
+    }
+
+    .contenedor-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        height:60%;
+        width:100%;
+        object-fit:cover;
+    
+    }
+
+
+    .contenedor-img img{
+        margin-left: 40px;
+        width:20%;
+        height:100%;
+        margin-right: 20px;
+    }
+
+    .contenedor-2-2{
+        background: orange;
+        height:100%;
+        width:50%;
+    }
+
+    .contenedor-icon{
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        height:30%;  
+    }
+
+    a img{
+        height:100px;
+        width:100px;
+    }
+
+
+    .contenedor-3{
+        display:flex;
+        flex-direction: row;
+        background:black;
+        height:80px;
+        width:1100px;
+        margin: auto;
+        
+    }
+
+    .contenedor-3-1{
+        margin-right: 20px;
+        background: purple;
+        height:100%;
+        width:70%;
+    }
+
+    .contenedor-3-1 p{
+        text-align: center;
+    }
+
+    .contenedor-3-2{
+        display: flex;
+        flex-direction: row;
+        background: rgb(209, 212, 18);
+        height:100%;
+        width:30%;
+    }
+
+    .contenedor-3-2-img img{
+        margin-left: 10px;
+        
+        height:80%;
+        width:80%;
+    }
+
+    .contenedor-3-2 p{
+        margin-left: 20px;
+        text-align: center;
+    }
 }
