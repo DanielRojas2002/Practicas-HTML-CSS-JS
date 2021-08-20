@@ -47,6 +47,22 @@ p{
 a{
     text-decoration: none;
 }
+.contenedor_navs img{
+    padding-top: 5px;
+    height:40px;
+    width: 40px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.contenedor_navs div:hover{
+    background: #3AAC9D;
+    border-radius: 10px;
+}
+
+.contenedor_navs a:hover{
+    color: #fff;
+}
 
 .contenedor_primerasec{
     display:flex;   
@@ -54,14 +70,7 @@ a{
     margin-bottom: 5px;
 }
 
-.contenedor_primerasec img{
-    padding-top: 5px;
-    height:40px;
-    width: 40px;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    
-}
+
 
 .contenedor_segundasec{
     display:flex;   
@@ -69,14 +78,7 @@ a{
     margin-bottom: 5px;
 }
 
-.contenedor_segundasec img{
-    padding-top: 5px;
-    height:40px;
-    width: 40px;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    
-}
+
 
 .contenedor_tercerasec{
     display:flex;   
@@ -84,14 +86,7 @@ a{
     margin-bottom: 5px;
 }
 
-.contenedor_tercerasec img{
-    padding-top: 5px;
-    height:40px;
-    width: 40px;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    
-}
+
 
 .contenedor_cuartasec{
     display:flex;   
@@ -100,78 +95,11 @@ a{
     
 }
 
-.contenedor_cuartasec img{
-    padding-top: 5px;
-    height:40px;
-    width: 40px;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    
-}
+
 
 .contenedor_quintasec{
     display:flex;   
     margin: 20px;
     margin-bottom: 5px;
-}
-
-.contenedor_quintasec img{
-    padding-top: 5px;
-    height:40px;
-    width: 40px;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    
-}
-
-
-.contenedor_primerasec:hover{
-    background: #3AAC9D;
-    border-radius: 10px;
-    
-}
-.contenedor_primerasec:hover>a{
-    color: #fff;
-    
-}
-
-.contenedor_segundasec:hover{
-    background: #3AAC9D;
-    border-radius: 10px;
-    
-}
-.contenedor_segundasec:hover>a{
-    color: #fff;
-    
-}
-
-.contenedor_tercerasec:hover{
-    background: #3AAC9D;
-    border-radius: 10px;
-    
-}
-.contenedor_tercerasec:hover>a{
-    color: #fff;
-    
-}
-
-.contenedor_cuartasec:hover{
-    background: #3AAC9D;
-    border-radius: 10px;
-    
-}
-.contenedor_cuartasec:hover>a{
-    color: #fff;
-    
-}
-
-.contenedor_quintasec:hover{
-    background: #3AAC9D;
-    border-radius: 10px;
-    
-}
-.contenedor_quintasec:hover>a{
-    color: #fff;
-    
 }
 
