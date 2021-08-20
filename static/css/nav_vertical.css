@@ -60,46 +60,14 @@ a{
     border-radius: 10px;
 }
 
+.contenedor_navs div{
+    display:flex;   
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
 .contenedor_navs a:hover{
     color: #fff;
 }
 
-.contenedor_primerasec{
-    display:flex;   
-    margin: 20px;
-    margin-bottom: 5px;
-}
-
-
-
-.contenedor_segundasec{
-    display:flex;   
-    margin: 20px;
-    margin-bottom: 5px;
-}
-
-
-
-.contenedor_tercerasec{
-    display:flex;   
-    margin: 20px;
-    margin-bottom: 5px;
-}
-
-
-
-.contenedor_cuartasec{
-    display:flex;   
-    margin: 20px;
-    margin-bottom: 5px;
-    
-}
-
-
-
-.contenedor_quintasec{
-    display:flex;   
-    margin: 20px;
-    margin-bottom: 5px;
-}
 
