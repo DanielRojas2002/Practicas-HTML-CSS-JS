@@ -4,7 +4,7 @@
 }
 
 body{
-
+    background:gold;
     overflow-x: hidden;
 }
 
@@ -15,24 +15,24 @@ hr{
 }
 
 .contenedor-general{
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background:gold;
+    margin-bottom: 30px;
+    
+    
 }
 
 .contenedor-nav{
+    margin: auto;
     width: 250px;
-    height: 100vh;
+    height: 650px;
+    border: 2px solid #000;
+    background:#fff;
 
 }
-
-.contenedor-derecho{
-    width:100%;
-    position:sticky;
-    height: 800px; 
-}
-
 
 
 .contenedor__img{
@@ -43,8 +43,8 @@ hr{
 }
 
 .contenedor__img img{
-    height:30px;
-    width:30px;
+    height:50px;
+    width:50px;
     border-radius: 10px;
    
 }
@@ -60,6 +60,7 @@ h2{
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    padding:5px;
     color:#000;
     
 }
@@ -78,11 +79,10 @@ a{
     text-decoration: none;
 }
 .contenedor_navs img{
-    padding-top: 5px;
+   
     height:40px;
     width: 40px;
-    margin-bottom: 10px;
-    padding-left: 5px;
+    padding: 5px;
 }
 
 .contenedor_navs div:hover{
@@ -92,8 +92,7 @@ a{
 
 .contenedor_navs div{
     display:flex;   
-    margin: 20px;
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
 .contenedor_navs a:hover{
@@ -102,7 +101,7 @@ a{
 
 .contenedor_overflow{
     background: #fff;
-    padding:10px;
+    padding:20px;
     
 
 }
@@ -131,48 +130,3 @@ a{
 }
 
 
-/*NAV 2*/
-
-.contendor-nav2{
-    display: flex;
-   
-    justify-content: space-between;
-    border-bottom:1px solid #fff ;
-    background:red;
-    width: 100%;
-    height: 10%;
-}
-
-.contenedor-nav2__p1{
-    width: 30%;
-  
-    
-    
-}
-
-.contenedor-nav2__p1 img{
-    padding:10px;
-    width: 20px;
-    height: 10%;
-    margin: 20px;
-    border-radius: 10px;
-    background:#fff;
-}
-
-.contenedor-nav2__p1 a{
-    margin: auto;
-}
-
-.contenedor-nav2__p2{
-    width: 40%;
- 
-
-}
-
-.contenido{
-    display:flex;
-    
-    background:purple;
-    height:100%;
-    width:100%;
-}
