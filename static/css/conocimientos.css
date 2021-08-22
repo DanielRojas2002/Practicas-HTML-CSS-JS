@@ -5,6 +5,8 @@
 
 body{
     padding: 10px;
+    background:#363391;
+    
 }
 
 h1{
@@ -15,10 +17,14 @@ h1{
     display: grid;
     grid-template-rows:repeat(5,1fr);
     grid-template-columns: repeat(1,1fr);
+    background:#4340B7;
+    border-radius: 20px;
+    border: 3px solid #000;
 }
 
 .item-grid-1{
-        
+    background:#6360C9;
+    
     border: 1px solid #000;
     
 }
@@ -38,11 +44,13 @@ h1{
     
 }
 .p2{
+    color:#fff;
     font-size: 10px; 
 
 }
 .p3{
     font-size: 25px;
+    color:#fff;
 }
 
 .flex img{
@@ -55,11 +63,13 @@ h1{
 
 
 .item-grid{
+    background:#6360C9;
     margin: 15px;
     border: 1px solid #000;
     
 }
 .item-grid-1{
+    background:#6360C9;
     margin: 15px;
     border: 1px solid #000;
     
@@ -68,6 +78,7 @@ h1{
 
 
 .item-grid-2{
+    background:#6360C9;
     margin: 15px;
     border: 1px solid #000;
     
@@ -83,12 +94,17 @@ h1{
 
 
 .flex-especial{
+    background:#6360C9;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(4,1fr);
     text-align: center;
     
 
+}
+
+.flex-especial p{
+    color:#fff;
 }
 
 .flex-especial-img img{
@@ -99,8 +115,25 @@ h1{
 }
 
 .item0{
-    
     margin: auto;
+}
+
+.flex-especial:hover{
+    background: #7573D0;
+    border-radius: 40px;
+    
+}
+.item-grid:hover{
+    background: #7573D0;
+    border-radius: 40px;
+    transition: all 1s;
+
+    
+}
+.item-grid-2:hover{
+    background: #7573D0;
+    border-radius: 40px;
+    transition: all 1s;
 }
 
 @media only screen and (min-width:1100px){
