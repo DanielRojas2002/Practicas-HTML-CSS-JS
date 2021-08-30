@@ -1,0 +1,43 @@
+
+
+.contenedor{
+    background-color: red;
+    
+    
+    
+}
+
+
+.caja{
+    display:inline-block;
+    border-radius: 50px;
+    position: relative;
+    height:50px;
+    width:50px;
+    margin: 10px;
+    animation-name: desplazar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+    animation-timing-function:cubic-bezier(.7,1.52,1,-0.63)
+    /*animation-fill-mode: forwards;*/
+}
+
+
+@keyframes desplazar{
+    0% {
+       
+        left: 0;
+        background: yellow;
+        
+    }
+    50%{
+        left: 50%;
+        background:black;
+
+    }
+    100%{
+        left: 100%;
+        background:purple;
+    }
+}
