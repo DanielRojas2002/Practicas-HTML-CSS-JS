@@ -1,0 +1,48 @@
+
+h1{
+    color:#F8961E;
+    text-align: center;
+}
+.contenedor{
+    background: #F94144;
+    padding:30px;
+    
+}
+
+.cajita1{
+    background:#F9C74F;
+    height:50px;
+    width:50px;
+    position:relative;
+    margin: 30px;
+    transition-property: background-color ,left, height, width ,border-radius;
+    transition-duration:1s, 3s ,3s;
+    /*transition-delay: 1s;*/
+    left: 0;
+}
+
+.contenedor:hover > .cajita1{
+    left: 80%;
+    background:#43AA8B;
+    height:70px;
+    width:70px;
+    border-radius: 30px;
+}
+
+.cajita1:first-child{
+    transition-timing-function: linear;
+}
+
+.cajita1:nth-child(2){
+    transition-timing-function:ease ;
+}
+
+.cajita1:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.cajita1:nth-child(4){
+    transition-timing-function:ease-out ;
+}
+.cajita1:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
