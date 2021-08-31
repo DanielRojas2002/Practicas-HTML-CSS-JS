@@ -1,0 +1,70 @@
+
+body{
+    background-color: var(--fondo-principal)
+}
+
+*{
+    border:0px;
+    padding: 0px;
+}
+
+:root{
+    --fondo-principal:#073B4C;
+    --principal:#06D6A0;
+    --secundario:#118AB2;
+    --tercero:#EF476F;
+    --letra:#fff;
+    --borde:#000;
+}
+
+
+.contenedor{
+    display:flex;
+    border: 40px solid #000;
+}
+div div{
+    
+    position: relative;
+    height:200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 3px solid var(--borde);
+    margin:20px;
+    animation-name: mover;
+
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+p{
+    color: var(--letra);
+    text-align: center;
+    font-size: 100%;
+}
+
+.caja1{
+    background-color: var(--principal);
+}
+
+.caja2{
+    background-color: var(--secundario)
+}
+
+.caja3{
+    background-color: var(--tercero)
+}
+
+
+@keyframes mover{
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left:50%;
+        background-color: var(--principal);
+        border-radius: 10px;
+    }
+}
