@@ -1,0 +1,14 @@
+
+
+
+
+.contenedor-img{
+    
+    filter: blur(20px);/*desenfoca*/
+    filter:brightness(.5); /*Brillo 0 nada de brillo 1 brillo original es la escala entre el 0 al infinito */
+    filter: contrast(4); /*Contraste 0 es nada de contraste 1 es el contraste original y arriba de 1 es mas contraste*/
+}
+
+img{
+    filter:drop-shadow(10px 10px 10px yellow);/*A las imagenes transparentes se le pone la sombra dentro de la imagen*/
+}
