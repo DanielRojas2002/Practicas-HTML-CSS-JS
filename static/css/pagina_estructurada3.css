@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --barra:#CAF0F8;
+    --letra:#E8E8E4;
+    --tamaño:20px;
+    --colorsec:#023E8A;
+    --colorter:#03045E;
+}
+
+body{
+    background: url("../img/pizza.jpg") no-repeat;
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
+
+}
+
+.contenedor-nav1{
+    display:grid;
+    grid-template-areas: "nav1 nav2 nav3";
+    background: transparent;
+    border-bottom:1px solid var(--barra) ;
+
+}
+
+.nav1{
+    grid-column: nav1;
+    
+    
+}
+
+
+.nav2{
+    grid-column: nav2;
+    
+}
+
+.nav3{
+    grid-column: nav3;
+    
+}
+
+
+.nav2 ul{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.nav3 ul{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 35px;
+}
+ul{
+    list-style: none;
+}
+
+.lado-izq{
+    position: absolute;
+    left: 60%;
+    top:10%;
+}
+.info{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+img{
+    margin:5px;
+    height:40px;
+    width: 40px;
+}
+
+li{
+    margin-top:20px ;
+    color: var(--letra);
+    font-size:var(--tamaño);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,p{
+    color: var(--letra);
+}
+
+.targetas{
+    display:grid;
+    grid-template-areas: "col1 col1"
+    "col2 col2"
+    "col3 col3"
+    "col4 col4"; 
+    
+    
+}
+.flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.targeta-1{
+    grid-column: col1;
+    background:linear-gradient(to top,transparent,var(--colorsec));
+    width: 80%;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 20px;
+    
+    
+    
+}
+
+.targeta-2{
+    grid-column: col2;
+    background:linear-gradient(to top,transparent,var(--colorsec));
+    width: 80%;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.targeta-3{
+    grid-column: col3;
+    background:linear-gradient(to top,transparent,var(--colorsec));
+    width: 80%;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.targeta-4{
+    grid-column: col4;
+    background:linear-gradient(to top,transparent,var(--colorsec));
+    width: 80%;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+
+.targeta-1:hover , .targeta-2:hover, .targeta-3:hover, .targeta-4:hover{
+    background:linear-gradient(to bottom,transparent,var(--colorter));
+}
