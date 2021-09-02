@@ -6,11 +6,24 @@
 }
 
 .contenedor{
-    width: 100vw;
-    height: 60vh;
+    display:grid;
+    grid-template-areas: "parte1"
+    "parte2"
+    "parte3";
+}
+.contenedor-1{
+    grid-area:parte1;
 }
 
+.contenedor-2{
+    grid-area:parte2;
+}
+
+.contenedor-3{
+    grid-area:parte3;
+}
 .contendor-grid-nav{
+    
     display:grid;
     grid-template-areas:"img navcentral navcentral navcentral boton";
 }
@@ -57,12 +70,43 @@
 }
 
 
-
-
-
 .boton{
     border: 2px solid #000;
     padding:5px
 }
 
 
+body{
+    background: url("../img/doc.jpg") no-repeat;
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
+
+}
+
+.contenedor-texto{
+    margin:5%;
+    width: 50vw;
+}
+
+.contenedor-texto__h1{
+    font-size:50px;
+    padding: 10px;
+}
+
+.contenedor-texto__p{
+    font-size:20px;
+    padding: 10px;
+    color: #000;
+}
+
+.boton-color{
+    padding: 10px;
+    color: #000;
+    background: lightblue;
+}
+
+
+.contenedor-abajo{
+    grid-area: parte2;
+}
