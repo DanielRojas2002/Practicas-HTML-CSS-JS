@@ -22,7 +22,9 @@ body{
 
 .contenedor-nav1{
     display:grid;
-    grid-template-areas: "nav1 nav2 nav3";
+    grid-template-areas: "nav1 "
+    "nav2 "
+    "nav3";
     background: transparent;
     border-bottom:1px solid var(--barra) ;
 
@@ -48,7 +50,8 @@ body{
 
 .nav2 ul{
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -63,8 +66,8 @@ ul{
 
 .lado-izq{
     position: absolute;
-    left: 60%;
-    top:10%;
+    left: 50%;
+    top:40%;
 }
 .info{
     display:flex;
@@ -87,7 +90,24 @@ li{
 a{
     text-decoration: none;
 }
+a:hover >li{
+    background: #023E8A;
+    padding:8px;
+    border: 2px solid #000;
+    margin-bottom: 10px;
 
+}
+
+.flex a{
+    color: rgb(240, 21, 21);
+}
+.flex>a:hover{
+    color: #CAF0F8;
+    background: #023E8A;
+    padding:8px;
+    border: 2px solid #000;
+   
+}
 h1,p{
     color: var(--letra);
 }
@@ -151,3 +171,26 @@ h1,p{
 .targeta-1:hover , .targeta-2:hover, .targeta-3:hover, .targeta-4:hover{
     background:linear-gradient(to bottom,transparent,var(--colorter));
 }
+@media only screen and (min-width:700px){
+    .contenedor-nav1{
+        display:grid;
+        grid-template-areas: "nav1 nav2 nav3";
+        background: transparent;
+        border-bottom:1px solid var(--barra) ;
+
+    }
+
+    .nav2 ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        
+    }
+
+    .lado-izq{
+        position: absolute;
+        left: 60%;
+        top:10%;
+    }
+}
+
