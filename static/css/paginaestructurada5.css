@@ -13,6 +13,8 @@
 }
 .contenedor-1{
     grid-area:parte1;
+    border-bottom: 1px solid #000;
+    
 }
 
 .contenedor-2{
@@ -39,7 +41,7 @@
     align-items: flex-end;
 }
 .nav-img-text{
-    color:aqua;
+    color:#03045E;
     font-size: 30px;
 }
 .nav-img{
@@ -67,6 +69,7 @@
 .nav-text{
     list-style: none;
     margin-top: 30px;
+    color: #000;
 }
 
 
@@ -80,7 +83,7 @@ body{
     background: url("../img/doc.jpg") no-repeat;
     background-size:cover;
     background-position:center center;
-    background-attachment: fixed;
+  
 
 }
 
@@ -141,4 +144,13 @@ body{
 
 p,a{
     letter-spacing: 3px;
+}
+
+
+.nav-a li:hover{
+    background-color: #023E8A;
+    padding:5px;
+    margin-bottom:8px;
+    border-radius: 5px;
+    color: #fff;
 }
