@@ -27,7 +27,9 @@
 .contendor-grid-nav{
     
     display:grid;
-    grid-template-areas:"img navcentral navcentral navcentral boton";
+    grid-template-areas:"img"
+    "navcentral" 
+    "boton";
 }
 
 .contenedor-grid-nav-img{
@@ -59,6 +61,7 @@
 
 .contenedor-navcentral-flex{
     display: flex;
+    flex-direction: column;
     justify-content:space-evenly;
     
     
@@ -89,7 +92,7 @@ body{
 
 .contenedor-texto{
     margin:5%;
-    width: 50vw;
+    width: 80vw;
 }
 
 .contenedor-texto__h1{
@@ -112,7 +115,7 @@ body{
 
 .contenedor-abajo0{
     display:grid;
-    grid-template-areas: "col1 col2 col3";
+    grid-template-areas: "col1" "col2" "col3";
     padding: 10px;
     margin-top: 30px;
 }
@@ -140,6 +143,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    
 }
 
 p,a{
@@ -153,4 +158,30 @@ p,a{
     margin-bottom:8px;
     border-radius: 5px;
     color: #fff;
+}
+
+
+@media only screen and  (min-width:800px){
+    .contendor-grid-nav{
+        display:grid;
+        grid-template-areas:"img navcentral navcentral navcentral boton";
+    }
+
+    .contenedor-navcentral-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        
+        
+    }
+    .contenedor-abajo0{
+        display:grid;
+        grid-template-areas: "col1 col2 col3";
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .contenedor-texto{
+        margin:5%;
+        width: 50vw;
+    }
 }
