@@ -1,0 +1,137 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+.img{
+    height:40px;
+    width:40px;
+    margin-right: 10px;
+}
+ul{
+    list-style: none;
+}
+.a{
+    text-decoration: none;
+}
+.contenedor{
+    display: grid;
+    grid-template-areas: "nav"
+    "minibarra"
+    "main"
+    "footer";
+}
+.svg-nav{
+    background: url("../SVG/wave_arriba.svg") ;
+    height:200px;
+    background-size:cover;
+    background-position:center center;
+}
+.contenedor-grid-general-1{
+    grid-area: nav;
+}
+
+
+.contenedor-grid-nav{
+    display:grid;
+    
+    grid-template-areas: "izq centro der";
+}
+
+.contenedor-grid-nav-izq{
+    grid-area: izq;
+    
+    padding:10px;
+
+}
+
+.contenedor-grid-nav-centro{
+    grid-area: centro;
+    display: flex;
+    flex-direction:row;
+    align-items:flex-end;
+    justify-content:space-evenly;
+}
+
+.contenedor-grid-flex-izq{
+    display:flex;
+    flex-direction:row;
+    align-items: flex-end;
+    margin-left: 20%;
+    
+}
+
+
+
+
+.contenedor-grid-nav-der{
+    grid-area: der;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-grid-general-2{
+    grid-area: minibarra;
+    background: rgba(179, 237, 20, 0.6);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 5px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.contenedor-grid-general-2__h3{
+    text-align: center;
+    font-size:20px;
+    letter-spacing: 5px;
+}
+
+.contenedor-grid-general-3{
+    grid-area: main;
+    background:blue;
+
+}
+
+.contenedor-grid-general-4{
+    grid-area: footer;
+    background:orange;
+
+}
