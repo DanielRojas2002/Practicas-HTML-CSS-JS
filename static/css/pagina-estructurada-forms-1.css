@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    letter-spacing: 5px;
+    
 }
 .img{
     height:40px;
@@ -18,10 +18,10 @@ ul{
 }
 .contenedor{
     display: grid;
-    grid-template-areas: "nav nav"
-    "minibarra minibarra"
-    "main aside"
-    "footer footer";
+    grid-template-areas: "nav"
+    "minibarra "
+    "main "
+    "footer";
 }
 .svg-nav{
     background: url("../SVG/wave_arriba.svg") ;
@@ -31,6 +31,7 @@ ul{
 }
 .contenedor-grid-general-1{
     grid-area: nav;
+    letter-spacing: 5px;
 }
 
 
@@ -116,6 +117,7 @@ ul{
     border-radius: 10px;
     border: 5px solid rgba( 255, 255, 255, 0.18 );
     padding:10px;
+    letter-spacing: 5px;
 
 }
 
@@ -130,15 +132,28 @@ ul{
 
 
 
-.contenedor-grid-general-3{
-    grid-area: main;
-    
+.contenedor-grid-main{
+    grid-area: main;  
     margin-left: 40px;
     margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
+    display: grid;
+    grid-template-areas: "izquierda derechaa";
+    grid-gap: 15px;
     
 
+}
+
+
+
+.contenedor-grid-general-3{
+    grid-area: izquierda;
+    height:50%;
+    width:100%;
+    border:2px solid #000;
+    letter-spacing: 5px;
+    
 }
 
 .contenedor-general-3-contenido{
@@ -149,6 +164,42 @@ ul{
     
     
 }
+
+
+.contenedor-grid-general-4{
+    grid-area: derechaa;
+    background:orange;
+    height:50%;
+    width:100%;
+    
+    
+}
+
+.contenedor-general-4-form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+   
+}
+
+
+.inputs{
+
+    margin-top: 15px;
+   padding:10px;
+   border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .contenedor-general-3-contenido::-webkit-scrollbar{
     width:10px;
@@ -169,19 +220,4 @@ ul{
 
 .contenedor-general-3-contenido::-webkit-scrollbar-thumb:active {
     background-color: yellow;
-}
-
-.contenedor-grid-general-4{
-    grid-area: aside;
-    background:orange;
-    margin-top: 20px;
-    margin-right: 40px;
-    
-
-}
-
-.contenedor-grid-general-5{
-    grid-area: footer;
-    background:orange;
-    
 }
