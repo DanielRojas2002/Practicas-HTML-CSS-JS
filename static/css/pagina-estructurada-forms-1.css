@@ -1,5 +1,14 @@
 
 
+:root{
+    --colorahover:#FF7B00;
+    --letra1:#fff;
+    --boton:#E01E37;
+    --forms:#FB8500;
+    --formshover:#F3722C;
+    --input:#FCCA46;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +24,13 @@ ul{
 }
 .a{
     text-decoration: none;
+    padding:10px;
+}
+
+a:hover{
+    background:var(--colorahover);
+    border-radius: 5px;
+    color:var(--letra1);
 }
 .contenedor{
     display: grid;
@@ -78,34 +94,12 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#boton:hover{
+    background:var(--boton);
+    
+    border-radius: 5px;
+    color:var(--letra1);
+}
 
 
 .contenedor-grid-general-2{
@@ -128,10 +122,6 @@ ul{
 }
 
 
-
-
-
-
 .contenedor-grid-main{
     grid-area: main;  
     margin-left: 40px;
@@ -139,26 +129,22 @@ ul{
     margin-left: 100px;
     margin-right: 100px;
     display: grid;
-    grid-template-areas: "izquierda derechaa";
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 15px;
     
 
 }
 
-
-
 .contenedor-grid-general-3{
-    grid-area: izquierda;
-    height:50%;
-    width:100%;
+    grid-column: 1;
     border:2px solid #000;
     letter-spacing: 5px;
+    height:320px;
     
 }
 
 .contenedor-general-3-contenido{
-    height:90%;
-    width:100%;
+    height:100%;
     overflow: auto;
     text-align: start;
     
@@ -167,28 +153,46 @@ ul{
 
 
 .contenedor-grid-general-4{
-    grid-area: derechaa;
-    background:orange;
-    height:50%;
-    width:100%;
-    
-    
+    grid-column: 2;
+    background:var(--forms);
+    height:320px;
+  
 }
 
 .contenedor-general-4-form{
+    margin: 10px;
+    
+}
+
+.inputss{
     display:flex;
     flex-direction:column;
     align-items: center;
-    width:100%;
-   
+    justify-content: center;
 }
 
-
 .inputs{
-
-    margin-top: 15px;
    padding:10px;
    border-radius: 10px;
+   margin-top: 20px;
+}
+
+.contenedor-grid-general-4:hover{
+    background: var(--formshover);
+    border-radius: 20px ;
+    border: 3px solid #000;
+}
+
+input{
+    border: none
+}
+
+input:focus{
+    background:var(--input);
+    color: #000;
+    border: none;
+    outline: none;
+    
 }
 
 
