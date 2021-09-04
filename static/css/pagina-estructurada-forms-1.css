@@ -18,10 +18,10 @@ ul{
 }
 .contenedor{
     display: grid;
-    grid-template-areas: "nav"
-    "minibarra"
-    "main"
-    "footer";
+    grid-template-areas: "nav nav"
+    "minibarra minibarra"
+    "main aside"
+    "footer footer";
 }
 .svg-nav{
     background: url("../SVG/wave_arriba.svg") ;
@@ -115,6 +115,7 @@ ul{
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 5px solid rgba( 255, 255, 255, 0.18 );
+    padding:10px;
 
 }
 
@@ -124,14 +125,63 @@ ul{
     letter-spacing: 5px;
 }
 
+
+
+
+
+
 .contenedor-grid-general-3{
     grid-area: main;
-    background:blue;
+    
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
 
 }
 
+.contenedor-general-3-contenido{
+    height:90%;
+    width:100%;
+    overflow: auto;
+    text-align: start;
+    
+    
+}
+
+.contenedor-general-3-contenido::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+.contenedor-general-3-contenido::-webkit-scrollbar-thumb {
+    background:gray;
+    border-radius: 6px;
+    
+}
+
+.contenedor-general-3-contenido::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+
+}
+
+
+.contenedor-general-3-contenido::-webkit-scrollbar-thumb:active {
+    background-color: yellow;
+}
+
 .contenedor-grid-general-4{
+    grid-area: aside;
+    background:orange;
+    margin-top: 20px;
+    margin-right: 40px;
+    
+
+}
+
+.contenedor-grid-general-5{
     grid-area: footer;
     background:orange;
-
+    
 }
