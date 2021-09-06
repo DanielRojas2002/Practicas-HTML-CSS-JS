@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.contenerdor-tabla{
+    overflow:auto;
+}
+table{
+    margin:auto;
+    border: 2px solid #000;
+    
+}
+td{
+    border: 2px solid #000;
+    text-align: center;
+    padding:10px;
+}
+
+th{
+    background:#000;
+    color: #fff;
+    padding:10px;
+}
+
+
+a{
+    padding:10px;
+    border:2px solid #000;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    
+}
+
+a:hover{
+    background:#000;
+    color: #fff;
+}
+
+.contenedor{
+    margin-top: 30px;
+    text-align: center;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
