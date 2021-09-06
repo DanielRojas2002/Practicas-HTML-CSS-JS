@@ -28,3 +28,8 @@
 
 //document.write(concatenacion)
 //document.write(suma)
+
+//nombre="daniel";
+//frase=`soy ${nombre} y me gusta nadar`
+
+//document.write(frase)
