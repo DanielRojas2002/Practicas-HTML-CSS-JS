@@ -62,3 +62,11 @@
 //     let frase=` El ${numero1} es igual al ${numero2}`;
 //     alert(frase)
 // }
+
+
+//ARRAYS
+
+
+// let array = ["texto",10,10.5,true,false];
+
+// document.write(array[2])
