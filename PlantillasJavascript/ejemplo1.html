@@ -167,7 +167,46 @@
                 <td >Itera el array </td>
                 <td>let datos=["daniel","dato2","jose","etc"]<br>for (elemento of datos){<br>document.write(elemento+"<br>")}</td>
             </tr>
+
+            <tr>
+                <td>For label  </td>
+                <td >Darle nombre a un bloque en este caso un for </td>
+                <td>let datos=["daniel","dato2","jose","etc"]<br>nombrefor:<br>for (dato of datos){<br>if (dato==="jose"){<br> continue nombrefor ;}<br>document.write(dato+"<br>")}</td>
+            </tr>
+
+            <tr>
+                <td>Funciones</td>
+                <td >Bloques de codigo reutilizables sin parametros</td>
+                <td>function saludar(){<br>
+                    let nombre=prompt("Como se llama:")<br>
+                    document.write("Hola Bienvenido"+nombre)
+                }
+                <br>
+                saludar();</td>
+            </tr>
+
+
+            <tr>
+                <td>Funcion con Parametros</td>
+                <td >Bloques de codigo reutilizables con parametros</td>
+                <td>function Suma(numero1,numero2){<br>
+                    let suma=numero1+numero2;<br>
+                    return suma;
+                }<br>
+                
+                sumatoria=Suma(10,20);<br>
+                document.write(sumatoria);</td>
+            </tr>
             
+            <tr>
+                <td>Funciones flecha</td>
+                <td >Son funciones de unn tipo mas profesional</td>
+                <td>const saludar=(nombre)=>{<br>
+                    alert("hola "+nombre)<br>
+                }
+                <br>
+                saludar("Daniel")</td>
+            </tr>
             
         </table>
     </div>

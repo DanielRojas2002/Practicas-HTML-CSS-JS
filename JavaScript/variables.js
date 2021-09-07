@@ -115,3 +115,55 @@ let datos=["daniel","dato2","jose","etc"]
 // for (elemento of datos){
 //     document.write(elemento+"<br>")
 // }
+
+
+// darle nombre a un bloqu
+
+// nombrefor:
+// for (dato of datos){
+//     if (dato==="jose"){
+//         continue nombrefor ;
+//     }
+//     document.write(dato+"<br>")
+// }
+
+//funciones
+
+
+// function saludar(){
+//     let nombre=prompt("Como se llama:")
+//     document.write("Hola Bienvenido"+nombre)
+// }
+
+// saludar();
+
+
+//funcion con parametros y return
+
+// function Suma(numero1,numero2){
+//     let suma=numero1+numero2;
+//     return suma;
+// }
+
+// sumatoria=Suma(10,20);
+// document.write(sumatoria);
+
+
+// Otra manera de hacer Funciones
+
+// const Suma= function(numero1,numero2){
+//     let suma=numero1+numero2;
+//     return suma;
+
+// }
+// sumatoria=Suma(10,20);
+// document.write(sumatoria);
+
+// funciones flecha
+
+// const saludar=(nombre)=>{
+//     alert("hola "+nombre)
+// }
+
+// saludar("Daniel")
+// saludar("Jose")
