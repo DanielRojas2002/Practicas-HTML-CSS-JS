@@ -33,3 +33,32 @@
 //frase=`soy ${nombre} y me gusta nadar`
 
 //document.write(frase)
+
+
+//Comparativos
+//numero1=10;
+//numero2="10";
+// == solo checa si es igual no le importa que tipo de dato sea
+// === le importa que se igual y el tipo de dato tambien
+//document.write(numero1===numero2); 
+
+
+//CONDICIONAL
+
+// let numero1=prompt("Ingres su numero 1:")
+// let numero2=prompt("Ingres su numero 2:")
+// if(numero1<numero2){
+//     let frase=` El ${numero1} es menor a ${numero2}`;
+//     alert(frase)
+
+// }
+
+// else if(numero1>numero2){
+//     let frase=` El ${numero1} es mayor a ${numero2}`;
+//     alert(frase)
+// }
+
+// else{
+//     let frase=` El ${numero1} es igual al ${numero2}`;
+//     alert(frase)
+// }
