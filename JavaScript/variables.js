@@ -99,3 +99,19 @@
 
 //     document.write(i)
 // }
+
+
+let datos=["daniel","dato2","jose","etc"]
+
+// for (elemento in datos){
+//     document.write(elemento+"<br>")
+// }
+
+// for (elemento in datos){
+//     document.write(datos[elemento]+"<br>")
+// }
+
+
+// for (elemento of datos){
+//     document.write(elemento+"<br>")
+// }
