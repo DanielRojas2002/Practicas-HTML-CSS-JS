@@ -70,3 +70,32 @@
 // let array = ["texto",10,10.5,true,false];
 
 // document.write(array[2])
+
+// array (diccionario)
+//let alumno={nombre:["daniel","jose"],apellido:["rojas","garza"]}
+
+// document.write(alumno["nombre"][1])
+
+
+// let condicional=0;
+
+// while (condicional<10){
+//     condicional++;
+//     document.write(condicional+"<br>")
+// }
+
+
+// let condicional=0;
+
+// do{
+//     condicional++;
+//     document.write(condicional+"<br>")
+// }
+
+// while(condicional<10)
+
+
+// for(let i=0; i<10; i++){
+
+//     document.write(i)
+// }
