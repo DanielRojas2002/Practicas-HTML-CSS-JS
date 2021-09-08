@@ -199,3 +199,77 @@ let datos=["daniel","dato2","jose","etc"]
 // let cantidad=prompt("Cuantos alumnos son:")
 // let dato=promedio(cantidad)
 // document.write("Este es el promedio del grupo de la edad:"+dato)
+
+
+//Crea una calculadroa con funciones 
+// const conoceroperacion=(ciclo)=>{
+//     if (ciclo==="SI" || ciclo==="si"){
+//         let numero1=parseInt(prompt("Ingrese su primer numero: "));
+//         let numero2=parseInt(prompt("Ingrese su segundo numero: "));
+//         let operacion=0;
+//         let cadena="";
+//         let opcion=parseInt(prompt("Que operacion desea hacer: 1=SUMA 2=RESTA 3=MULTIPLICACION 4=DIVISION:"));
+
+//         if(opcion===1){
+//             opcion="SUMA"
+//             operacion=Suma(numero1,numero2);
+//             cadena=Formato(operacion,opcion);
+//             return cadena;
+//         }
+
+//         else if (opcion===2){
+//             opcion="RESTA"
+//             operacion=Resta(numero1,numero2);
+//             cadena=Formato(operacion,opcion);
+//             return cadena;
+//         }
+
+//         else if (opcion===3){
+//             opcion="MULTIPLICACION"
+//             operacion=Multiplicacion(numero1,numero2);
+//             cadena=Formato(operacion,opcion);
+//             return cadena;
+//         }
+
+//         else if (opcion===4){
+//             opcion="DIVISION"
+//             operacion=Division(numero1,numero2);
+//             cadena=Formato(operacion,opcion);
+//             return cadena;
+//         }
+//     }
+
+    
+
+    
+    
+// }
+
+// const Suma=(numero1,numero2)=>{
+//     let operacion=numero1+numero2;
+//     return operacion;
+// }
+
+// const Resta=(numero1,numero2)=>{
+//     let operacion=numero1-numero2;
+//     return operacion;
+// }
+
+// const Multiplicacion=(numero1,numero2)=>{
+//     let operacion=numero1*numero2;
+//     return operacion;
+// }
+
+// const Division=(numero1,numero2)=>{
+//     let operacion=numero1/numero2;
+//     return operacion;
+// }
+
+// const Formato=(resultado,opcion)=>{
+//     let formato="EL resultado de la operacion ("+opcion+") es : "+resultado;
+//     return formato;
+// }
+
+// let ciclo=prompt("Deseas entrar a la caluladora:SI NO: ");
+// let dato=conoceroperacion(ciclo);
+// document.write(dato)
