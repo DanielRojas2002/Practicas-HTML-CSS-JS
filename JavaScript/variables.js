@@ -167,3 +167,35 @@ let datos=["daniel","dato2","jose","etc"]
 
 // saludar("Daniel")
 // saludar("Jose")
+
+// desarrolla una funcio que te pida la cantidad de alumnos en el
+//salon y que pe pidas sus nombres y su edad y despues sacar 
+//el promedio del salon
+
+// const promedio=(cantidad)=>{
+//     let listanombre=[];
+//     let listaedad=[];
+//     let sumatoria=0;
+    
+//     for (i=1; cantidad>=i; i++){
+//         let nombre=prompt("Ingrese el nombre del Alumno "+i);
+//         let edad=prompt("Ingrese la edad de "+nombre);
+//         listanombre.push(nombre);
+//         listaedad.push(edad);
+        
+
+//     }
+
+//     for (elemento of listaedad){
+//         sumatoria=parseInt(sumatoria)+parseInt(elemento);
+//     }
+    
+    
+//     promediofinal=sumatoria/cantidad;
+//     return promediofinal;
+    
+
+// }
+// let cantidad=prompt("Cuantos alumnos son:")
+// let dato=promedio(cantidad)
+// document.write("Este es el promedio del grupo de la edad:"+dato)
