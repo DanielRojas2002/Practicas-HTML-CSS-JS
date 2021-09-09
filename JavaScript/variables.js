@@ -273,3 +273,59 @@ let datos=["daniel","dato2","jose","etc"]
 // let ciclo=prompt("Deseas entrar a la caluladora:SI NO: ");
 // let dato=conoceroperacion(ciclo);
 // document.write(dato)
+
+
+// CLASES 
+// class Animal{
+//     constructor(especie,edad,tamaño){
+//         this.especie=especie;
+//         this.edad=edad;
+//         this.tamaño=tamaño;
+//     }
+
+//     verinfo(){
+//         document.write("Informacion: "+this.especie+this.edad+this.tamaño)
+//     }
+
+
+// }
+
+
+// let perro= new Animal("Perruna",10,1.70);
+
+// perro.verinfo();
+
+//Crea Una calculadora con una clase 
+
+// class Calculadora{
+//     constructor(numero1,numero2){
+//         this.numero1=numero1;
+//         this.numero2=numero2;
+//     }
+
+//     suma(){
+//         let resultado=this.numero1+this.numero2;
+//         document.write("El Resultado de la Suma: " +resultado+"<br>");
+//     }
+
+//     resta(){
+//         let resultado=this.numero1-this.numero2;
+//         document.write("El Resultado de la Resta: "+resultado+"<br>");
+//     }
+
+//     mult(){
+//         let resultado=this.numero1*this.numero2;
+//         document.write("El Resultado de la Multiplicacion: "+resultado+"<br>");
+//     }
+
+//     div(){
+//         let resultado=this.numero1/this.numero2;
+//         document.write("El Resultado de la Division: "+resultado+"<br>");
+//     }
+// }
+
+// let calculo1=new Calculadora(10,15);
+// calculo1.suma()
+// calculo1.resta()
+// calculo1.mult()
+// calculo1.div()

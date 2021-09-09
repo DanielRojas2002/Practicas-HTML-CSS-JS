@@ -207,48 +207,35 @@
                 <br>
                 saludar("Daniel")</td>
             </tr>
+
+            <tr>
+                <td>Clases</td>
+                <td >Son objetos que tienen atributos y metodos</td>
+                <td>class Animal <p class="corchetes-1">{</p><br>
+                    contructor(especie,edad,tamaño)<p class="corchetes">{</p><br>
+                        this.especie=especie;<br>
+                        this.edad=edad;<br>
+                        this.tamaño=tamaño;<br>
+                    <p class="corchetes">}</p>
+
+                    <hr>
+                    
+                    verinfo()<p class="corchetes">{</p><br>
+                        document.write("Informacion: "+this.especie+this.edad+this.tamaño)
+                    <p class="corchetes">}</p>
+                    <br>
+                    <p class="corchetes-1">}</p>
+                    <hr>
+
+                    let perro=new Animal("Perro",5,12.4);<br>
+                    perro.verinfo()
+                    
+                </td>
+            </tr>
             
         </table>
 
-        <table>
-            <tr>
-                <th>Funcion</th>
-                <th>Programa</th>
-            </tr>
-
-            <tr>
-                <td>Contar promedio edad</td>
-                <td>
-                    const promedio=(cantidad)=>{<br>
-                        let listanombre=[];<br>
-                        let listaedad=[];<br>
-                        let sumatoria=0;<br>
-                        
-                        for (i=1; cantidad>=i; i++){<br>
-                            let nombre=prompt("Ingrese el nombre del Alumno "+i);<br>
-                            let edad=prompt("Ingrese la edad de "+nombre);<br>
-                            listanombre.push(nombre);<br>
-                            listaedad.push(edad);<br>
-                            
-                    
-                        }
-                    
-                        for (elemento of listaedad){<br>
-                            sumatoria=parseInt(sumatoria)+parseInt(elemento);<br>
-                        }
-                        
-                        
-                        promediofinal=sumatoria/cantidad;<br>
-                        return promediofinal;<br>
-                        
-                    
-                    }
-                    let cantidad=prompt("Cuantos alumnos son:")<br>
-                    let dato=promedio(cantidad)<br>
-                    document.write("Este es el promedio del grupo de la edad:"+dato)<br>
-                </td>
-            </tr>
-        </table>
+        
     </div>
 </body>
 <script src="../JavaScript/variables.js"></script>
