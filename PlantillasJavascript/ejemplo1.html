@@ -232,6 +232,42 @@
                     
                 </td>
             </tr>
+
+            <tr>
+                <td>Herencia de clases</td>
+                <td >Sirven para poder acceder a atributos y metodos dentro de otros objetos</td>
+                <td>class Perro extends Animal{<br>
+                contructor(especie,edad,color,pelaje,cola){<br>
+                this.pelaje=pelaje;<br>
+                this.cola=cola; }<br>
+                ladrar(){<br>document.write("woow")}<br>}</td>
+            </tr>
+
+
+            <tr>
+                <td>Metodo set</td>
+                <td >Nos sirve para modificar un atributo el cual ya fue definido</td>
+                <td>set modificarNombre(nuevanombre){<br>
+                    this.nombre = nuevanombre;<br>}
+                    <hr>
+                    let alumno1=new Alumno("Daniel",19);<br>
+                    document.write(alumno1.nombre);<br>
+                    
+                    alumno1.modificarNombre="Juan";<br>
+                    document.write(alumno1.nombre);</td>
+            </tr>
+
+            <tr>
+                <td>Metodo get</td>
+                <td >Nos sirve para obtener informacion de un atributo </td>
+                <td>get obtenerNombre(){<br>
+                    return this.nombre;}<br>
+                    document.write(alumno1.obtenerNombre);
+            </td>
+            </tr>
+
+        </tr>
+
             
         </table>
 

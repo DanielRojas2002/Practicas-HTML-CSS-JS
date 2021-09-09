@@ -329,3 +329,69 @@ let datos=["daniel","dato2","jose","etc"]
 // calculo1.resta()
 // calculo1.mult()
 // calculo1.div()
+
+
+//Herencia
+
+// class Animal{
+//     constructor(especie,edad,color){
+//         this.especie=especie;
+//         this.edad=edad;
+//         this.color=color;
+//     }
+
+//     verinfo(){
+//         document.write("La Especie es: "+this.especie)
+//     }
+// }
+
+// class Perro extends Animal{
+//     constructor(especie,edad,color,pelaje,cola){
+//         super(especie,edad,color);
+//         this.pelaje=pelaje;
+//         this.cola=cola;
+        
+//     }
+//     static ladrar(){
+//         document.write("WOOOW");
+//     }
+// }
+
+// let objeto1=new Perro("Perro",10,"Gris","puntiagudo","roja");
+// objeto1.verinfo();
+
+// //Aqui utilice su metodo statico no cree un objeto solo use su metodo
+// Perro.ladrar();
+
+
+// SET and GET
+class Alumno{
+    constructor(nombre,edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    set modificarNombre(nuevanombre){
+        this.nombre = nuevanombre;
+    }
+
+    set modificarEdad(nuevaedad){
+        this.edad=nuevaedad;
+    }
+
+    get obtenerNombre(){
+        return this.nombre;
+    }
+
+    get obtenerEdad(){
+        return this.edad;
+    }
+}
+
+let alumno1=new Alumno("Daniel",19);
+document.write(alumno1.nombre);
+
+alumno1.modificarNombre="Juan";
+document.write(alumno1.nombre);
+document.write(alumno1.obtenerNombre);
+document.write(alumno1.obtenerEdad);
