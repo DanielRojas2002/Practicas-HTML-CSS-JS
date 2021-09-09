@@ -365,33 +365,98 @@ let datos=["daniel","dato2","jose","etc"]
 
 
 // SET and GET
-class Alumno{
-    constructor(nombre,edad){
-        this.nombre = nombre;
-        this.edad = edad;
+// class Alumno{
+//     constructor(nombre,edad){
+//         this.nombre = nombre;
+//         this.edad = edad;
+//     }
+
+//     set modificarNombre(nuevanombre){
+//         this.nombre = nuevanombre;
+//     }
+
+//     set modificarEdad(nuevaedad){
+//         this.edad=nuevaedad;
+//     }
+
+//     get obtenerNombre(){
+//         return this.nombre;
+//     }
+
+//     get obtenerEdad(){
+//         return this.edad;
+//     }
+// }
+
+// let alumno1=new Alumno("Daniel",19);
+// document.write(alumno1.nombre);
+
+// alumno1.modificarNombre="Juan";
+// document.write(alumno1.nombre);
+// document.write(alumno1.obtenerNombre);
+// document.write(alumno1.obtenerEdad);
+
+
+//OTRO EJEMPLO DE CLASES Y HERENCIA
+
+class Celular{
+    constructor(color,peso,resolucionpantalla,resolucioncamara,ram){
+        this.color=color;
+        this.peso=peso;
+        this.resolucionpantalla=resolucionpantalla;
+        this.resolucioncamara=resolucioncamara;
+        this.ram=ram
+        this.encendido=false;
     }
 
-    set modificarNombre(nuevanombre){
-        this.nombre = nuevanombre;
+    botonOn_Off(){
+        if (this.encendido==false){
+            alert("Encendiendo Celular")
+            this.encendido=true;
+        }
+        else{
+            alert("Celular Apagado")
+            this.encendido=false;
+        }
     }
 
-    set modificarEdad(nuevaedad){
-        this.edad=nuevaedad;
+    reiniciar(){
+        if (this.encendido==true){
+            alert("Reiniciando Celular")
+        }
+
+        else{
+            alert("El Celular esta Apagado")
+            this.encendido=false;
+        }
     }
 
-    get obtenerNombre(){
-        return this.nombre;
+    tomarfoto(){
+        alert("Foto tomada en una resolucion en :"+this.resolucioncamara);
+
     }
 
-    get obtenerEdad(){
-        return this.edad;
+    grabarvideo(){
+        alert("Grabacion en una resolucion de :"+this.resolucioncamara)
+    }    
+
+    mostrarInfo(){
+        let color = "El Color del celular es: "+this.color+"<br>"
+        let peso = "El peso del celular es: "+this.peso+"<br>"
+        let resolucionpantalla = "El resolucion pantalla del celular es: "+this.resolucionpantalla+"<br>"
+        let resolucioncamara = "El resolucion camara del celular es: "+this.resolucioncamara+"<br>"
+        let info=(color+peso+resolucionpantalla+resolucioncamara);
+        return info;
+    
     }
 }
 
-let alumno1=new Alumno("Daniel",19);
-document.write(alumno1.nombre);
+let celular1=new Celular("rojo","150 gr","5p","fullhd","2 GB")
 
-alumno1.modificarNombre="Juan";
-document.write(alumno1.nombre);
-document.write(alumno1.obtenerNombre);
-document.write(alumno1.obtenerEdad);
+celular1.botonOn_Off();
+celular1.reiniciar();
+document.write(celular1.mostrarInfo());
+
+celular1.tomarfoto();
+celular1.grabarvideo();
+celular1.botonOn_Off();
