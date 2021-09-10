@@ -135,7 +135,7 @@
         <table>
 
             <tr>
-                <th colspan="3">Arrays</th>
+                <th colspan="3">Arrays y sus metodos</th>
             </tr>
             <tr>
                 <th>Comando</th>
@@ -155,6 +155,85 @@
                 <td >Creas un array tipo diccionario </td>
                 <td>let alumno={nombre:["daniel","jose"],apellido:["rojas","garza"]};<br>Acceder a un dato // document.write(alumno["nombre"][1])</td>
             </tr>
+
+            <tr>
+                <td>.pop()</td>
+                <td >Elimina el ultimo elemento del array </td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+
+                    let resultado=lista.pop();</td>
+            </tr>
+
+            <tr>
+                <td>.shift()</td>
+                <td >Elimina el primer elemento del array </td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+
+                    let resultado=lista.shift();</td>
+            </tr>
+
+            <tr>
+                <td>.push()</td>
+                <td >Agrega elemnto al array </td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+
+                    lista.push("nuevoelemento");</td>
+            </tr>
+
+            <tr>
+                <td>.reverse()</td>
+                <td >Invierte el orden de los elementos de un array</td>
+                <td>let numeros=[1,2,3,4,5];<br>
+
+                    numeros.reverse();</td>
+            </tr>
+
+            <tr>
+                <td>.unshift(-1,-2,-3)</td>
+                <td >Agrega elementos desde el principio</td>
+                <td>numeros.unshift(-1,-2,-3);</td>
+            </tr>
+
+            <tr>
+                <td>.sort()</td>
+                <td >Ordena el array</td>
+                <td>numeros.sort();</td>
+            </tr>
+
+            <tr>
+                <td>.splice(start,cantidadDeElementos)</td>
+                <td >Elimina elementos dandole donde inicie y la cantidad de elemetnos a borrar</td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+                    lista.splice(2,1);</td>
+            </tr>
+
+            <tr>
+                <td>.splice(start,cantidadDeElementos,elemento a agregar)</td>
+                <td >Elimina elementos dandole donde inicie y la cantidad de elementos <br> a borrar y sile das otra posicion agrega donde le dijiste</td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+                    lista.splice(2,1,"nuevo")</td>
+            </tr>
+
+            <tr>
+                <td>.join("caracter a unir entre cada elemento del array)</td>
+                <td >Une el array por el caracter que le indiques y lo transorma a tostring</td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+                    let resultado=lista.join("--");</td>
+            </tr>
+
+            <tr>
+                <td>.slice(inicio,final)</td>
+                <td >Te regresa el dato del array que le diste el rango</td>
+                <td>let lista=["daniel","eduardo","gustavo","rojas"];<br>
+                    let resultado=lista.slice(0,2);</td>
+            </tr>
+
+            
+
+           
+
+
+
         </table>
 
         <table>

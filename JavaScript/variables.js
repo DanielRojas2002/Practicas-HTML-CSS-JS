@@ -497,3 +497,27 @@ let datos=["daniel","dato2","jose","etc"]
 // let resultado11 = numero.toString();
 // let resultado12 = cadena.length;
 // document.write(resultado12);
+
+
+
+//METODOS DE ARRAYS
+
+// let lista=["daniel","eduardo","gustavo","rojas"];
+// let numeros=[0,1,2,3,4,5]
+// let numerodes=[1,2,2,5,4,3,68,95,21]
+//let resultado=lista.pop();
+//let resultado=lista.shift();
+
+//lista.push("nuevo")
+
+//numeros.reverse()
+
+//numeros.unshift(-1,-2,-3);
+//numerodes.sort()
+
+//lista.splice(2,1,"nuevo")
+
+//let resultado=lista.join("--");
+
+// let resultado=lista.slice(1,3);
+// document.write(resultado);
