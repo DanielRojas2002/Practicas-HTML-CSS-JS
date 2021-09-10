@@ -399,64 +399,74 @@ let datos=["daniel","dato2","jose","etc"]
 
 //OTRO EJEMPLO DE CLASES Y HERENCIA
 
-class Celular{
-    constructor(color,peso,resolucionpantalla,resolucioncamara,ram){
-        this.color=color;
-        this.peso=peso;
-        this.resolucionpantalla=resolucionpantalla;
-        this.resolucioncamara=resolucioncamara;
-        this.ram=ram
-        this.encendido=false;
-    }
+// class Celular{
+//     constructor(color,peso,resolucionpantalla,resolucioncamara,ram){
+//         this.color=color;
+//         this.peso=peso;
+//         this.resolucionpantalla=resolucionpantalla;
+//         this.resolucioncamara=resolucioncamara;
+//         this.ram=ram
+//         this.encendido=false;
+//     }
 
-    botonOn_Off(){
-        if (this.encendido==false){
-            alert("Encendiendo Celular")
-            this.encendido=true;
-        }
-        else{
-            alert("Celular Apagado")
-            this.encendido=false;
-        }
-    }
+//     botonOn_Off(){
+//         if (this.encendido==false){
+//             alert("Encendiendo Celular")
+//             this.encendido=true;
+//         }
+//         else{
+//             alert("Celular Apagado")
+//             this.encendido=false;
+//         }
+//     }
 
-    reiniciar(){
-        if (this.encendido==true){
-            alert("Reiniciando Celular")
-        }
+//     reiniciar(){
+//         if (this.encendido==true){
+//             alert("Reiniciando Celular")
+//         }
 
-        else{
-            alert("El Celular esta Apagado")
-            this.encendido=false;
-        }
-    }
+//         else{
+//             alert("El Celular esta Apagado")
+//             this.encendido=false;
+//         }
+//     }
 
-    tomarfoto(){
-        alert("Foto tomada en una resolucion en :"+this.resolucioncamara);
+//     tomarfoto(){
+//         alert("Foto tomada en una resolucion en :"+this.resolucioncamara);
 
-    }
+//     }
 
-    grabarvideo(){
-        alert("Grabacion en una resolucion de :"+this.resolucioncamara)
-    }    
+//     grabarvideo(){
+//         alert("Grabacion en una resolucion de :"+this.resolucioncamara)
+//     }    
 
-    mostrarInfo(){
-        let color = "El Color del celular es: "+this.color+"<br>"
-        let peso = "El peso del celular es: "+this.peso+"<br>"
-        let resolucionpantalla = "El resolucion pantalla del celular es: "+this.resolucionpantalla+"<br>"
-        let resolucioncamara = "El resolucion camara del celular es: "+this.resolucioncamara+"<br>"
-        let info=(color+peso+resolucionpantalla+resolucioncamara);
-        return info;
+//     mostrarInfo(){
+//         let color = "El Color del celular es: "+this.color+"<br>"
+//         let peso = "El peso del celular es: "+this.peso+"<br>"
+//         let resolucionpantalla = "El resolucion pantalla del celular es: "+this.resolucionpantalla+"<br>"
+//         let resolucioncamara = "El resolucion camara del celular es: "+this.resolucioncamara+"<br>"
+//         let info=(color+peso+resolucionpantalla+resolucioncamara);
+//         return info;
     
-    }
-}
+//     }
+// }
+// class CelularAltaGama extends Celular{
+//     constructor(color,peso,resolucionpantalla,resolucioncamara,ram,resoluciondecamaraextra){
+//     super(color,peso,resolucionpantalla,resolucioncamara,ram);
+//     this.resoluciondecamaraextra=resoluciondecamaraextra;
+//     }
 
-let celular1=new Celular("rojo","150 gr","5p","fullhd","2 GB")
+//     grabarcamaralenta(){
+//         alert("estas grabando en camara lenta")
+//     }
 
-celular1.botonOn_Off();
-celular1.reiniciar();
-document.write(celular1.mostrarInfo());
+// } 
+// let celular1=new Celular("rojo","150 gr","5p","fullhd","2 GB")
 
-celular1.tomarfoto();
-celular1.grabarvideo();
-celular1.botonOn_Off();
+// // celular1.botonOn_Off();
+// // celular1.reiniciar();
+// // document.write(celular1.mostrarInfo());
+
+// // celular1.tomarfoto();
+// // celular1.grabarvideo();
+// // celular1.botonOn_Off();
