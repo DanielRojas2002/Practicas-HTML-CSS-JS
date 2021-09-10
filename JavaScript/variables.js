@@ -470,3 +470,30 @@ let datos=["daniel","dato2","jose","etc"]
 // // celular1.tomarfoto();
 // // celular1.grabarvideo();
 // // celular1.botonOn_Off();
+
+
+
+//METODOS DE CADENAS
+
+// let cadena0="cadena1 cadena1"
+// let cadena="cadena1";
+// let cadena2="dadena2";
+// let cadena3="cadena3";
+// let cadena5="hola como estas"
+// let numero=1;
+// // let resultado=cadena.concat(cadena2,cadena3);
+
+
+// let resultado1 = cadena.startsWith("ca" )
+// let resultado2 = cadena.endsWith("1" )
+// let resultado3 = cadena.includes("dena" )
+// let resultado4 = cadena.indexOf("dena" )
+// let resultado5 = cadena0.lastIndexOf("dena" )
+// let resultado6 = cadena0.repeat(2)
+// let resultado7 = cadena5.split(" ")
+// let resultado8 = cadena.substring(0,3);
+// let resultado9 = cadena.toLowerCase();
+// let resultado10 = cadena.toUpperCase();
+// let resultado11 = numero.toString();
+// let resultado12 = cadena.length;
+// document.write(resultado12);
