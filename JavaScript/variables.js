@@ -521,3 +521,24 @@ let datos=["daniel","dato2","jose","etc"]
 
 // let resultado=lista.slice(1,3);
 // document.write(resultado);
+
+// let lista=["hola","hola","acde","dododod"];
+
+// let resultado=lista.filter(caracter=>caracter.length<= 4)
+
+// document.write(resultado);
+
+
+//MODULO MATH
+
+let numero=1.234
+let numeroraiz=Math.sqrt(25);
+let numeroraizcubica=Math.cbrt(25);
+let max=Math.max(25,40,10,123,20);
+let min=Math.min(25,40,10,123,20);
+let x=Math.random();
+
+let trunc=Math.trunc(numero);
+
+numero=Math.round(numero);
+document.write(trunc);
