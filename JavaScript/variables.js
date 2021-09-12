@@ -606,5 +606,16 @@
 // document.write(dato4[0])
 
 
+//METODOS PARA DEFINIR OBTENER Y ELIMINAR VALORES DE ATRIBUROS
+//Cambiar el tipo de input con setAttribute
+// let tipo=document.querySelector(".prueba");
 
+// tipo.setAttribute("type","color");
+
+
+//Obtener el atributo "type"
+// document.write(tipo.getAttribute("type"));
+
+//Remueve el atributo type
+// tipo.removeAttribute("type");
 
