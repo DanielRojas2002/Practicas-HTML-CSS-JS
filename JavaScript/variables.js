@@ -101,7 +101,7 @@
 // }
 
 
-let datos=["daniel","dato2","jose","etc"]
+// let datos=["daniel","dato2","jose","etc"]
 
 // for (elemento in datos){
 //     document.write(elemento+"<br>")
@@ -531,14 +531,80 @@ let datos=["daniel","dato2","jose","etc"]
 
 //MODULO MATH
 
-let numero=1.234
-let numeroraiz=Math.sqrt(25);
-let numeroraizcubica=Math.cbrt(25);
-let max=Math.max(25,40,10,123,20);
-let min=Math.min(25,40,10,123,20);
-let x=Math.random();
+// let numero=1.234
+// let numeroraiz=Math.sqrt(25);
+// let numeroraizcubica=Math.cbrt(25);
+// let max=Math.max(25,40,10,123,20);
+// let min=Math.min(25,40,10,123,20);
+// let x=Math.random();
 
-let trunc=Math.trunc(numero);
+// let trunc=Math.trunc(numero);
 
-numero=Math.round(numero);
-document.write(trunc);
+// numero=Math.round(numero);
+// document.write(trunc);
+
+
+//Problema :
+//Un salon itera este array:
+
+// let datos={Maestros:["Juan","Jorge","Alicia"],
+//             Materias:["Mate","Fisica","Quimica"],
+//             Alumnos:["alumno1","alumno2","alumno3"]
+// }
+
+// let traerMaestros=()=>{
+//     document.write(datos["Maestros"]);
+// }
+
+// let traerMaterias=()=>{
+//     document.write(datos["Materias"]);
+// }
+
+// let traerAlumnos=()=>{
+//     document.write(datos["Alumnos"]);
+// }
+
+
+// let opciones=()=>{
+//     let opcion=prompt("1=Maestros 2=Materias 3=Alumnos");
+//     return parseInt(opcion);
+// }
+
+
+// let op=opciones()
+
+// if (op===1){
+//     traerMaestros();
+// }
+
+// else if (op===2){
+//     traerMaterias();
+// }
+
+// else{
+//     traerAlumnos();
+// }
+
+
+//METODOS DE SELECCION DE ELEMENTOS:
+
+// let dato=document.getElementById("id1")
+// document.write(dato);
+
+
+// let dato2=document.getElementsByTagName("p")
+
+// document.write(dato2);
+
+
+// let dato3=document.querySelector(".parrafo");
+// document.write(dato3);
+
+
+// let dato4=document.querySelectorAll(".parrafo");
+// document.write(dato4)
+// document.write(dato4[0])
+
+
+
+

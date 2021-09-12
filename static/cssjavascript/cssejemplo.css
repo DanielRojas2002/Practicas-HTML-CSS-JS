@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.titulostable{
+    background: rgb(233, 236, 14);
+    color: #000;
+}
+
 
 .contenerdor-tabla{
     overflow:auto;
@@ -68,3 +73,4 @@ p{
     padding: 0;
     margin: 0;
 }
+
