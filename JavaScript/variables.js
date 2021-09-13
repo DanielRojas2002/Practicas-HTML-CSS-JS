@@ -619,3 +619,88 @@
 //Remueve el atributo type
 // tipo.removeAttribute("type");
 
+//METODOS classList
+
+// const titulo = document.querySelector(".titulo");
+
+
+//Agregue un clase al titulo despues tenngo que definirla en el css
+//pero no la agregue en el html si no se la agregue en js
+//titulo.classList.add("grande")
+
+// Remueve la clase desde el js la clase que esta en el html
+// titulo.classList.remove("grande");
+
+//Nos devuelve la clase que tiene indicando que posicion 
+//Accedi a la primera clase que tiene 
+//<h1 class="titulo otro">HOLA MUNDO</h1>
+// let clase1=titulo.classList.item(0);
+
+
+//Nos dice si ese elemento tiene la clase 
+//Nos devuelve true o false
+// let clase=titulo.classList.contains("otro2");
+// document.write(clase);
+
+
+//Replace remplza una clase por otra
+// let clase=titulo.classList.replace("titulo","nueva")
+
+//SI la clase la tiene la quita y si no la tiene la agrega
+// let clase=titulo.classList.toggle("titulo");
+
+
+//OBTENCION Y MODIFICACION DE ELEMENTOS
+
+// let titulo2 = document.querySelector(".titulo");
+
+//Nos devuelve el texto de un elemento
+// let resultado= titulo2.textContent;
+
+//Nos devuelve todo el html sus clases etc 
+// let resultado=titulo2.outerHTML;
+// alert(resultado);
+
+
+//PASOS PARA CREAR UN ELEMENTO tipo lista 
+// const contenedor=document.getElementById("1");
+
+// const fragmento=document.createDocumentFragment()
+// for (i=0; i<20; i++){
+//     const lista=document.createElement("LI");
+//     lista.innerHTML="Este es un elemento de la lista";
+//     fragmento.appendChild(lista);
+// }
+
+// contenedor.appendChild(fragmento);
+
+
+//HIJOS OBTENCION
+
+// const contenedor2=document.querySelector(".contenedor2");
+
+
+
+// const h1nuevo=document.createElement("H1");
+// const pnuevo=document.createElement("P");
+// pnuevo.innerHTML="ESTE ES MI PARRAFO NUEVO";
+// h1nuevo.innerHTML="ESTE ES MI TITULO NUEVO";
+
+// const hijo1=document.getElementById("hijo1");
+// const hijo2=document.getElementById("hijo2")
+// const hijo3=document.getElementById("hijo3")
+
+// contenedor2.replaceChild(h1nuevo,hijo1);
+
+// contenedor2.removeChild(hijo2);
+
+// contenedor2.replaceChild(pnuevo,hijo3);
+
+// let respuesta=contenedor2.hasChildNodes();
+
+// if(respuesta){
+//     document.write("El elemento si tiene hijos");
+// }
+// else{
+//     document.write("EL elemento NO tiene hijos");
+// }

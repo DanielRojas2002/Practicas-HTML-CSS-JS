@@ -677,6 +677,190 @@
             </tr>
         </table>
 
+        <table>
+            <tr>
+                <th colspan="3">METODOS de classList</th>
+                
+            </tr>
+
+            <tr class="titulostable">
+                <td>Concepto</td>
+                <td>Definicion</td>
+                <td>Ejemplo</td>
+            </tr>
+
+            <tr>
+                <td>add()</td>
+                <td>Añade una clase</td>
+                <td>const titulo = document.querySelector(".titulo");<br>
+                    titulo.classList.add("grande")</td>
+            </tr>
+
+            <tr>
+                <td>remove()</td>
+                <td>Remueve una clase</td>
+                <td>const titulo = document.querySelector(".titulo");<br>
+                    titulo.classList.remove("grande");  </td>
+            </tr>
+
+            <tr>
+                <td>item()</td>
+                <td>Devuelve la clase del indice especificado</td>
+                <td>const titulo = document.querySelector(".titulo");<br>
+                    < h1 class="titulo otro">HOLA MUNDO< /h1 ><br>
+                    let clase1=titulo.classList.item(0);</td>
+            </tr>
+
+            <tr>
+                <td>contains()</td>
+                <td>Verifica si ese elemento posee o no ,la clase especifica</td>
+                <td>const titulo = document.querySelector(".titulo");<br>
+                    let clase=titulo.classList.contains("otro2");</td>
+            </tr>
+
+            <tr>
+                <td>replace()</td>
+                <td>Remplaza una clase por otra</td>
+                <td>const titulo = document.querySelector(".titulo");<br>
+                    let clase=titulo.classList.replace("titulo","nueva")</td>
+            </tr>
+
+            <tr>
+                <td>toggle()</td>
+                <td>Si no tiene la clase especificada ,la agrega,si ya la tiene, la elimina</td>
+                <td>const titulo = document.querySelector(".titulo");<br>
+                    let clase=titulo.classList.toggle("titulo");
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">OBTENCION DE ELEMENTOS</th>
+                
+            </tr>
+
+            <tr class="titulostable">
+                <td>Concepto</td>
+                <td>Definicion</td>
+                <td>Ejemplo</td>
+            </tr>
+
+            <tr>
+                <td>textContent</td>
+                <td>Devuelve le texto de cualquier nodo</td>
+                <td>let titulo2 = document.querySelector(".titulo");<br>let resultado= titulo2.textContent;</td>
+            </tr>
+
+            <tr>
+                <td>innertHTML</td>
+                <td>Devuelve el contenido html de un elemento</td>
+                <td>let titulo2 = document.querySelector(".titulo");<br>
+                    let resultado=titulo2.innerHTML;</td>
+            </tr>
+
+            <tr>
+                <td>outerHTML</td>
+                <td>Devuelve el contenido HTML completo del elemento</td>
+                <td>let titulo2 = document.querySelector(".titulo");<br>
+                    let resultado=titulo2.outerHTML;</td>
+            </tr>
+
+            
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">Pasos para crear un Elemento </th>
+                
+            </tr>
+
+            <tr class="titulostable">
+                <td colspan="3">Concepto</td>
+                
+            </tr>
+
+            <tr >
+                <td colspan="3">const contenedor=document.getElementById("1");<br>
+
+                    const fragmento=document.createDocumentFragment()<br>
+                    for (i=0; i< 20; i++ ){ <br>
+                        const lista=document.createElement("LI");<br>
+                        lista.innerHTML="Este es un elemento de la lista";<br>
+                        fragmento.appendChild(lista);<br>
+                    }<br>
+                    
+                    contenedor.appendChild(fragmento);</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">OBTENCION DE CHILDS</th>
+                
+            </tr>
+
+            <tr class="titulostable">
+                <td>Concepto</td>
+                <td>Definicion</td>
+                <td>Ejemplo</td>
+            </tr>
+
+            <tr>
+                <td>firstElementChild</td>
+                <td>Nos devuelve el elemento hijo el primero</td>
+                <td>const contenedor2=document.querySelector(".contenedor2");<br>
+                    const hijo1=contenedor2.firstElementChild;</td>
+            </tr>
+
+            <tr>
+                <td>lastElementChild</td>
+                <td>Nos devuelve el ultimo elemento hijo</td>
+                <td>const contenedor2=document.querySelector(".contenedor2");<br>
+                    const hijoultimo=contenedor2.lastElementChild;</td>
+            </tr>
+
+            <tr>
+                <td>children</td>
+                <td>Nos devuelve TODOS los nodos hijos</td>
+                <td>const contenedor2=document.querySelector(".contenedor2");<br>
+                    const hijos=contenedor2.children;</td>
+            </tr>
+
+            <tr>
+                <th colspan="3">MODIFICACION DE CHILDS</th>
+                
+            </tr>
+
+            <tr class="titulostable">
+                <td>Concepto</td>
+                <td>Definicion</td>
+                <td>Ejemplo</td>
+            </tr>
+
+            <tr>
+                <td>replaceChild(nuevo,viejo)</td>
+                <td>Remplaza el hijo</td>
+                <td>const contenedor2=document.querySelector(".contenedor2");<br>
+                    const h1nuevo=document.createElement("H1");<br>
+                    h1nuevo.innerHTML="ESTE ES MI TITULO NUEVO";<br>
+                    contenedor2.replaceChild(h1nuevo,hijo1);</td>
+            </tr>
+
+            <tr>
+                <td>removeChild()</td>
+                <td>Elimina el hijo</td>
+                <td>const hijo2=document.getElementById("hijo2")
+                    <br>contenedor2.removeChild(hijo2);</td>
+            </tr>
+
+            <tr>
+                <td>hasChildNodes()</td>
+                <td>Nos dice si el elemento tiene hijos</td>
+                <td>let respuesta=contenedor2.hasChildNodes();</td>
+            </tr>
+
+        </table>
     </div>
 </body>
 <script src="../JavaScript/variables.js"></script>
