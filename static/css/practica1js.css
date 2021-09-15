@@ -1,0 +1,38 @@
+.contenedor-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightcoral;
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    border: 3px solid #000;
+    padding: 20px;
+}
+.flex-item:hover{
+    background: #fff;
+}
+
+a{
+    
+    background: white;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;  
+}
+
+a:hover{
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
