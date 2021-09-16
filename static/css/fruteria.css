@@ -1,0 +1,35 @@
+.contenedor-manzana{
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;   
+
+}
+
+
+.contenedor-platano{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ambos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+.flex-item{
+    margin: 40px;
+    border: 2px solid #000;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
