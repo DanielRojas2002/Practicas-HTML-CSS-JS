@@ -1,0 +1,28 @@
+
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: #386641;
+    
+}
+.contenedor{
+    padding: 20px;
+    background: #6A994E;
+    margin: 5px;
+    width: 400px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+}
+.contenedor:hover{
+    background: #A7C957;
+    color:#000;
+    border-radius: 30px;
+}
