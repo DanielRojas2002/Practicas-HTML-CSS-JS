@@ -704,3 +704,48 @@
 // else{
 //     document.write("EL elemento NO tiene hijos");
 // }
+
+
+//OBJETO WINDOW
+
+// let ventana=window.open("https://youtube.com")
+
+// ventana.close()
+
+// console.log(ventana.closed)
+
+// window.stop()
+
+// print()
+
+// let confirmacion=confirm("Estas seguro?");
+
+
+
+// if( confirmacion===true){
+//     alert("BYE")
+
+// }
+
+// else{
+//     alert("Perfecto te quieroo")
+// }
+
+// let ventana = window.screen
+
+// console.log(ventana)
+
+// let x = window.screenLeft;
+// let y = window.screenTop;
+// let resultado= `<p>${x} ,</p><p>${y}</p>`
+
+// document.write(resultado);
+
+// const x = window.scrollX;
+// const y = window.scrollY;
+
+// alert(x)
+// alert(y)
+
+// window.scrollTo(0,940);
+
