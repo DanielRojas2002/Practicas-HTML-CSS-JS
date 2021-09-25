@@ -1,0 +1,52 @@
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+
+.contenedor2{
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 10px;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+.contenedor3{
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 10px;
+    
+    
+}
+
+.contextemenu{
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 10px;
+    
+
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    
+}
+

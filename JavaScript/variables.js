@@ -749,3 +749,35 @@
 
 // window.scrollTo(0,940);
 
+// EVENTS
+
+// let boton=document.querySelector(".boton");
+// let boton2=document.querySelector(".boton2");
+// let caja=document.querySelector(".contenedor2")
+// let cajaout=document.querySelector(".contenedor3")
+// let contextmenu=document.querySelector(".contextemenu")
+
+// let contador=0
+// let contador2=0
+
+// boton.addEventListener("click",(e)=>{
+//     contador++;
+//     console.log(`Contador de Clicks: ${contador}`)
+// })
+
+// boton2.addEventListener("dblclick",(e)=>{
+//     contador2++;
+//     console.log(`Contador de Clicks Dobles: ${contador2}`)
+// })
+
+// caja.addEventListener("mouseover",(e)=>{
+//     console.log("El Mouse esta encima de mi :)")
+// })
+
+// cajaout.addEventListener("mouseout",(e)=>{
+//     console.log("El Mouse se salio del elemento")
+// })
+
+// contextmenu.addEventListener("contextmenu",(e)=>{
+//     console.log("Clicko con el Click Derecho")
+// })
