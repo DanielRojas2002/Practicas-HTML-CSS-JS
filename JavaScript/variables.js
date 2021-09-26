@@ -781,3 +781,57 @@
 // contextmenu.addEventListener("contextmenu",(e)=>{
 //     console.log("Clicko con el Click Derecho")
 // })
+
+
+//SWITCH BLOQUES Y TRY
+
+//Bloque
+// let nombre="Daniel";
+
+// {
+//     let nombre="Jose";
+//     alert(nombre);
+// }
+
+// alert(nombre);
+
+//Switch
+
+// let opcion=2;
+
+// switch(opcion){
+    
+//     case 1:
+      
+//         alert("SOY EL DATO 1")
+//         break;
+        
+//     case 2:
+      
+//         alert("SOY EL DATO 2")
+//         break;
+        
+//     case 3:
+       
+//         alert("SOY EL DATO 3")
+//         break;
+
+    
+// }
+
+
+// Manejador de Errores
+
+// try{
+//     functione()
+   
+// }
+
+// catch(error){
+//     alert(error);
+
+// }
+
+// finally{
+//     alert("PASE")
+// }
