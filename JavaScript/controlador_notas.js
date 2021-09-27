@@ -1,28 +1,30 @@
-let maestro=document.getElementById("maestro");
-let cantidadAlumnos=document.getElementById("cantidad_alumno");
-let cantidadNotas=document.getElementById("cantidad_notas");
+
 let boton=document.getElementById("boton-generar");
+let botonReinciar=document.getElementById("boton-reiniciar")
+
+
+let documentfragment=document.createDocumentFragment();
+
+
 let div=document.createElement("DIV");
 let resultado=document.querySelector(".Reporte");
-
-
-
-
-
-
+let datos=document.querySelector(".datos")
+let flex=document.querySelector(".flex-4");
 
 boton.addEventListener("click",(e)=>{
     e.preventDefault();
     let valido=validarcampos();
-
+    
+    
+ 
+   
     if (valido[0]==true){
-
+        
         div.innerHTML=(valido[1])
         div.classList.remove("verde")
         div.classList.add("red");
 
         resultado.appendChild(div);
-
     }
 
     else{
@@ -37,6 +39,7 @@ boton.addEventListener("click",(e)=>{
         let maestro=valido[1];
         let alumnos=valido[2];
         let notas=valido[3];
+        flex.removeChild(boton);
         crearinputs(maestro,alumnos,notas);
         
 
@@ -44,8 +47,38 @@ boton.addEventListener("click",(e)=>{
     }
 })
 
+botonReinciar.addEventListener("click",(e)=>{
+    let resultado=document.querySelector(".Reporte");
+ 
+    let verde=document.querySelector(".verde")
+    let input=document.querySelector(".div-input")
+    let flex=document.querySelector(".flex-4");
+    let cantidadAlumnos=document.getElementById("cantidad_alumno");
+    try{
+        resultado.removeChild(verde)
+        
 
+        
+        while (datos.firstChild){
+            datos.removeChild(datos.firstChild)
+
+        }
+        	
+        
+        flex.appendChild(boton);
+    }
+    catch{
+        
+    }
+    
+
+
+}
+)
 const validarcampos=()=>{
+    let maestro=document.getElementById("maestro");
+    let cantidadAlumnos=document.getElementById("cantidad_alumno");
+    let cantidadNotas=document.getElementById("cantidad_notas");
     
     let error=[]
     let cantidadalumno=String(cantidadAlumnos.value);
@@ -78,18 +111,20 @@ const validarcampos=()=>{
 
 const crearinputs=(maestro,alumnos,notas)=>{
     let datos=document.querySelector(".datos")
-    
-    let documentfragment=document.createDocumentFragment();
 
     for (i=1; i<=alumnos;i++){
         let div2=document.createElement("DIV")
-        let html=(`<input  class='inputs'type='text' id='Alumno-${i}' placeholder='Nombre del Alumno' required>`)
+        let html2=[];
+        let html=(`<input  class='inputs'type='text' id='Alumno-${i}' placeholder='Nombre del Alumno ${i}:' min='1' required>`)
         for (let x=1; x<=notas; x++){
-           
             
-            let html2=(`<input  class='inputs'type='number' id='Alumno${i}-nota-${x}' placeholder='Nota ${x}:' required>`)
-            div2.innerHTML=(html+html2)
+            
+            
+            html2[x-1]=(`<input  class='inputs'type='number' id='Alumno${i}-nota-${x}' placeholder='Nota ${x}:' min='1'  max='99' required>`)
+            
         }
+        div2.innerHTML=(html+html2)
+        
         
             
         div2.classList.add("div-input");
