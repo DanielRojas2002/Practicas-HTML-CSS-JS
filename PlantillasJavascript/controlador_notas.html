@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/cssjavascript/controlador_notas.css">
+</head>
+<body>
+    <h1>Controlador de Notas</h1>
+    
+    
+
+    
+    <form class="contenedor-flex" >
+        
+        <div class="flex-1">
+            <label for="">Maestro:</label>
+            <input type="text" name="" id="maestro" placeholder="Nombre del Maestro" required>
+        </div>
+        <div class="flex-2">
+            <label for="">Cantidad de Alumnos</label>
+            <input type="number" id="cantidad_alumno" placeholder="Cantidad de Alumnos" min="1" required>
+        </div>
+        <div class="flex-3">
+            <label for="">Cantidad de Notas</label>
+            <input type="number" id="cantidad_notas" placeholder="Cantidad de Notas" min="1" required>
+            
+        </div>
+        <div class="flex-4">
+            <button  class="btn" type="submit" id="boton-generar">Generar</button>
+        </div>
+        
+        
+    </form>
+    
+    
+    
+   
+        
+  
+
+    <div class="Reporte">
+
+    </div>
+
+    <div class="datos"></div>
+</body>
+<script src="../JavaScript/controlador_notas.js"></script>
+</html>
