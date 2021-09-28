@@ -152,6 +152,7 @@ const crearinputs=(maestro,alumnos,notas)=>{
             let padre=abuelo.children;
             let listaclases=[]
             let listaCLASES=[]
+            let listaidsgeneral=[]
             let cantidad=0;
             
             for (x of padre){
@@ -175,11 +176,13 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 // let valor=hijos[contador2];
                 valido=validarcampos()
                 let notas=valido[3]
-
+                let listaidgrupal=[]
                 for (x=1; x<=notas; x++){
-                    console.log(hijos[x].id)
+                    // console.log(hijos[x].id)
+                    listaidgrupal.push(hijos[x].id)
                     
                 }
+                listaidsgeneral.push(listaidgrupal);
                 contador2++
                 //ME QUEDE AQUI YA TENGO TODOS LOS IDS DE LOS INPUTS 
                
@@ -187,6 +190,8 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 // let cantidadAlumnos=document.getElementById("cantidad_alumno");
                 // let cantidadNotas=document.getElementById("cantidad_notas");
             }
+            //YA TENGO LOS ID POR ALUMNO TENGO UNA LISTA DE LISTAS
+            console.log(listaidsgeneral)
             
             
         })
