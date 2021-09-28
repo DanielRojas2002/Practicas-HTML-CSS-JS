@@ -3,6 +3,8 @@ let boton=document.getElementById("boton-generar");
 let botonReinciar=document.getElementById("boton-reiniciar")
 
 
+
+
 let documentfragment=document.createDocumentFragment();
 
 
@@ -49,11 +51,10 @@ boton.addEventListener("click",(e)=>{
 
 botonReinciar.addEventListener("click",(e)=>{
     let resultado=document.querySelector(".Reporte");
- 
     let verde=document.querySelector(".verde")
-    let input=document.querySelector(".div-input")
     let flex=document.querySelector(".flex-4");
-    let cantidadAlumnos=document.getElementById("cantidad_alumno");
+    let contenedor_btn_calcular=document.querySelector(".contenedor-boton-calcular")
+    
     try{
         resultado.removeChild(verde)
         
@@ -62,6 +63,10 @@ botonReinciar.addEventListener("click",(e)=>{
         while (datos.firstChild){
             datos.removeChild(datos.firstChild)
 
+        }
+
+        while (contenedor_btn_calcular.firstChild){
+            contenedor_btn_calcular.removeChild(contenedor_btn_calcular.firstChild)
         }
         	
         
@@ -73,8 +78,8 @@ botonReinciar.addEventListener("click",(e)=>{
     
 
 
-}
-)
+})
+
 const validarcampos=()=>{
     let maestro=document.getElementById("maestro");
     let cantidadAlumnos=document.getElementById("cantidad_alumno");
@@ -111,8 +116,10 @@ const validarcampos=()=>{
 
 const crearinputs=(maestro,alumnos,notas)=>{
     let datos=document.querySelector(".datos")
+    let contenedor_btn_calcular=document.querySelector(".contenedor-boton-calcular")
+    
 
-    for (i=1; i<=alumnos;i++){
+    for (let i=1; i<=alumnos;i++){
         let div2=document.createElement("DIV")
         let html2=[];
         let html=(`<input  class='inputs'type='text' id='Alumno-${i}' placeholder='Nombre del Alumno ${i}:' min='1' required>`)
@@ -127,12 +134,66 @@ const crearinputs=(maestro,alumnos,notas)=>{
         
         
             
-        div2.classList.add("div-input");
+        div2.classList.add("div-input",`ALUMNO-${i}`);
+        
         documentfragment.appendChild(div2)
        
         
         
     }   
+    contenedor_btn_calcular.innerHTML=(" <button class='btn' type='submit' id='calcular-promedios'>Calcular</button>")
     
     datos.appendChild(documentfragment)
+    let botonCalcular=document.getElementById("calcular-promedios")
+
+    if (botonCalcular){
+        botonCalcular.addEventListener("click",()=>{
+            let abuelo=document.querySelector(".datos");
+            let padre=abuelo.children;
+            let listaclases=[]
+            let listaCLASES=[]
+            let cantidad=0;
+            
+            for (x of padre){
+                listaclases.push(x)
+            }
+
+            for (z in listaclases){
+                cantidad+=1;
+            }
+            
+            for (let x=1; x<=cantidad; x++){
+                let alumno=`ALUMNO-${x}`
+                listaCLASES.push(alumno)
+            }
+
+            let contador2=1
+            for( elemento of listaCLASES){
+                let clase=document.querySelector(`.${elemento}`);
+                let hijos=clase.children;
+                
+                // let valor=hijos[contador2];
+                valido=validarcampos()
+                let notas=valido[3]
+
+                for (x=1; x<=notas; x++){
+                    console.log(hijos[x].id)
+                    
+                }
+                contador2++
+                //ME QUEDE AQUI YA TENGO TODOS LOS IDS DE LOS INPUTS 
+               
+                // let maestro=document.getElementById("maestro");
+                // let cantidadAlumnos=document.getElementById("cantidad_alumno");
+                // let cantidadNotas=document.getElementById("cantidad_notas");
+            }
+            
+            
+        })
+    }
 }
+
+
+
+
+
