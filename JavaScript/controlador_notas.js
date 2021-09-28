@@ -174,6 +174,7 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 listaCLASES.push(alumno)
             }
             valido=validarcampos()
+            notas=validarcampos()
             let contador2=1
             for( elemento of listaCLASES){
                 let clase=document.querySelector(`.${elemento}`);
@@ -219,8 +220,12 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 divcalcularerror.classList.remove("error_input")
                 divcalcularerror.classList.add("valido_input")
                 divcalcularerror.innerHTML=("<p>TODOS LOS INPUTS ESTAN LLENADOS CORRECTAMENTE</p> <p>CALCULANDO<p>")
-               
-
+                let valoresnombre=listavaloreslimpios[0]
+                let valoresinput=listavaloreslimpios[2]
+                let cantidadnotas=valido[3]
+                
+                listapromedios=calcularpromedio(valoresnombre,valoresinput,cantidadnotas)
+                console.log(listapromedios)
                 
             }
 
@@ -349,5 +354,33 @@ const validarinputs=(listaidsgeneral,listanombres)=>{
 }
 
 
+const calcularpromedio=(valoresnombre,valoresinput,cantidadnotas)=>{
+    let listapromedioindividual=[]
+    let listapromedioglobal=[]
+
+    
+   
+    let x1=0;
+    for (alumno of valoresnombre){
+        listapromedioindividual=[]
+        let suma=0;
+           
+
+        for(x=1; x<=cantidadnotas; x++){
+            suma+=valoresinput[x1];
+            x1++
+        }
+        
+        
+        let promedio=Math.round(suma/cantidadnotas);
+        listapromedioindividual.push(alumno)
+        listapromedioindividual.push(promedio)
+        listapromedioglobal.push(listapromedioindividual)
+        
+
+    }
+    return listapromedioglobal
+    
+}
 
 

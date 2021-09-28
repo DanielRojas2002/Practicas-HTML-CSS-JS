@@ -113,3 +113,23 @@ input:focus{
     margin: 8px;
 
 }
+
+.contenedor-boton-calcular{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.contenedor-boton-calcular button{
+    border: none;
+    width: 50%;
+    margin: auto;
+}
+
+.contenedor-boton-calcular button:hover{
+    border: none;
+    background: #B08968;
+    color: #fff;
+    border-radius: 10px;
+}
