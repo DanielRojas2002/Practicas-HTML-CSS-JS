@@ -54,7 +54,8 @@ botonReinciar.addEventListener("click",(e)=>{
     let verde=document.querySelector(".verde")
     let flex=document.querySelector(".flex-4");
     let contenedor_btn_calcular=document.querySelector(".contenedor-boton-calcular")
-    
+    let error=document.querySelector(".error_inputs");
+
     try{
         resultado.removeChild(verde)
         
@@ -67,6 +68,10 @@ botonReinciar.addEventListener("click",(e)=>{
 
         while (contenedor_btn_calcular.firstChild){
             contenedor_btn_calcular.removeChild(contenedor_btn_calcular.firstChild)
+        }
+
+        while (error.firstChild){
+            error.removeChild(error.firstChild)
         }
         	
         
