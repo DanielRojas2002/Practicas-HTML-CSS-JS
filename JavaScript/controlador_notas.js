@@ -224,8 +224,13 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 let valoresinput=listavaloreslimpios[2]
                 let cantidadnotas=valido[3]
                 
+
                 listapromedios=calcularpromedio(valoresnombre,valoresinput,cantidadnotas)
-                console.log(listapromedios)
+                
+                if (listapromedios){
+                    reportepromedio(listapromedios);
+                }
+                
                 
             }
 
@@ -381,6 +386,10 @@ const calcularpromedio=(valoresnombre,valoresinput,cantidadnotas)=>{
     }
     return listapromedioglobal
     
+}
+
+const reportepromedio=(lista)=>{
+    console.log(lista)
 }
 
 
