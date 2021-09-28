@@ -86,3 +86,30 @@ input:focus{
     border: 2px solid #000;
     
 }
+
+.error_input{
+    margin: 30px;
+    padding: 10px;
+    background: #B08968;
+    color: #fff;
+    text-align: center;
+}
+
+.error_input p{
+    margin: 8px;
+}
+
+.valido_input {
+
+    margin: 30px;
+    padding: 10px;
+    background: #B08968;
+    color: #fff;
+    text-align: center;
+
+}
+
+.valido_input p{
+    margin: 8px;
+
+}

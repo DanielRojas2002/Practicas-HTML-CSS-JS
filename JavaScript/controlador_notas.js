@@ -2,7 +2,7 @@
 let boton=document.getElementById("boton-generar");
 let botonReinciar=document.getElementById("boton-reiniciar")
 
-
+let divcalcularerror=document.createElement("DIV");
 
 
 let documentfragment=document.createDocumentFragment();
@@ -183,18 +183,14 @@ const crearinputs=(maestro,alumnos,notas)=>{
 
                 
                 for (x=1; x<=notas; x++){
-                    // console.log(hijos[x].id)
+        
                     listaidgrupal.push(hijos[x].id)
                     
                     
                 }
                 listaidsgeneral.push(listaidgrupal);
                 contador2++
-                //ME QUEDE AQUI YA TENGO TODOS LOS IDS DE LOS INPUTS 
-               
-                // let maestro=document.getElementById("maestro");
-                // let cantidadAlumnos=document.getElementById("cantidad_alumno");
-                // let cantidadNotas=document.getElementById("cantidad_notas");
+                
             }
             let nombre=valido[2]
             
@@ -203,11 +199,34 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 
 
             }
-            //YA TENGO LOS ID POR ALUMNO TENGO UNA LISTA DE LISTAS
+           
             
             let listavaloreslimpios=validarinputs(listaidsgeneral,listanombres);
-            console.log(listavaloreslimpios);
             
+            let nomtrue=listavaloreslimpios[1];
+            let valortrue=listavaloreslimpios[3];
+            let error=document.querySelector(".error_inputs");
+
+            
+         
+            
+            if (nomtrue===true && valortrue===true){
+                divcalcularerror.classList.remove("error_input")
+                divcalcularerror.classList.add("valido_input")
+                divcalcularerror.innerHTML=("<p>TODOS LOS INPUTS ESTAN LLENADOS CORRECTAMENTE</p> <p>CALCULANDO<p>")
+               
+
+                
+            }
+
+            else{
+                divcalcularerror.classList.remove("valido_input")
+                divcalcularerror.classList.add("error_input")
+                
+                divcalcularerror.innerHTML=("<p>LOS DATOS DEBEN DE ESTAR ENTRE 0 Y 100 </p><p> LOS NOMBRES DEBEN DE TENER CARACTERES ALFANUMERICOS</p>")
+                
+            }
+            error.appendChild(divcalcularerror)
         })
     }
 }
