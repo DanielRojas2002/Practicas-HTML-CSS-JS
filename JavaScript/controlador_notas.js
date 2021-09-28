@@ -153,6 +153,7 @@ const crearinputs=(maestro,alumnos,notas)=>{
             let listaclases=[]
             let listaCLASES=[]
             let listaidsgeneral=[]
+            let listanombres=[]
             let cantidad=0;
             
             for (x of padre){
@@ -167,19 +168,24 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 let alumno=`ALUMNO-${x}`
                 listaCLASES.push(alumno)
             }
-
+            valido=validarcampos()
             let contador2=1
             for( elemento of listaCLASES){
                 let clase=document.querySelector(`.${elemento}`);
                 let hijos=clase.children;
                 
                 // let valor=hijos[contador2];
-                valido=validarcampos()
+                
                 let notas=valido[3]
+                
                 let listaidgrupal=[]
+
+
+                
                 for (x=1; x<=notas; x++){
                     // console.log(hijos[x].id)
                     listaidgrupal.push(hijos[x].id)
+                    
                     
                 }
                 listaidsgeneral.push(listaidgrupal);
@@ -190,14 +196,133 @@ const crearinputs=(maestro,alumnos,notas)=>{
                 // let cantidadAlumnos=document.getElementById("cantidad_alumno");
                 // let cantidadNotas=document.getElementById("cantidad_notas");
             }
-            //YA TENGO LOS ID POR ALUMNO TENGO UNA LISTA DE LISTAS
-            console.log(listaidsgeneral)
+            let nombre=valido[2]
             
+            for (x=1;x<=nombre;x++){
+                listanombres.push(`Alumno-${x}`)
+                
+
+            }
+            //YA TENGO LOS ID POR ALUMNO TENGO UNA LISTA DE LISTAS
+            
+            let listavaloreslimpios=validarinputs(listaidsgeneral,listanombres);
+            console.log(listavaloreslimpios);
             
         })
     }
 }
 
+
+const validarinputs=(listaidsgeneral,listanombres)=>{
+    let listanombreslim=[]
+    let listavalores=[]
+    let listaglobal=[]
+    let nombretodos;
+    let valoretodos;
+    let listatrue=[]
+    
+    
+    for (x of listanombres){
+        validonom=[];
+        let nombre=document.getElementById(`${x}`)
+        let nombrenumero=parseInt(nombre.value)
+
+        if (nombrenumero>=0){
+
+            nombretodos=(false);
+            listatrue.push(nombretodos)
+        }
+        
+        else{
+            let valido2=String(nombre.value);
+        
+            if (valido2.length>0){
+                listanombreslim.push(valido2);
+                nombretodos=(true)
+                listatrue.push(nombretodos)
+            }
+           
+        }
+        
+    }
+   
+    for (x of listaidsgeneral){
+
+        for (y of x){
+            validovalores=[];
+            let claseinput=document.getElementById(`${y}`);
+            let inputint=parseInt(claseinput.value);
+            let inputstr=String(inputint);
+            
+            if (inputstr.length>0){
+
+                if (inputint>=1 && inputint<=100){
+                    listavalores.push(inputint);
+                    valoretodos=(true)
+                    listatrue.push(valoretodos)
+                    
+                }
+
+                else{
+                    valoretodos=(false)
+                    listatrue.push(valoretodos)
+                   
+                }
+            }
+
+            else{
+                valoretodos=(false)
+                listatrue.push(valoretodos)
+            }
+
+            
+        }
+        
+        
+
+        
+    }
+
+    let contadortrues=0;
+    let contadorfalses=0;
+    for ( x of listatrue){
+        if (x===true){
+            contadortrues++
+        }
+
+        else if (x===false) {
+            contadorfalses++
+        }
+
+    }
+
+    if (contadorfalses==0){
+        listaglobal.push(listanombreslim)
+        listaglobal.push(true);
+
+    }
+
+    contadortrues=0;
+    contadorfalses=0;
+    for ( x of listatrue){
+        if (x===true){
+            contadortrues++
+        }
+
+        else if (x===false) {
+            contadorfalses++
+        }
+
+    }
+
+    if (contadorfalses==0){
+        listaglobal.push(listavalores)
+        listaglobal.push(true);
+
+    }
+
+    return listaglobal
+}
 
 
 
