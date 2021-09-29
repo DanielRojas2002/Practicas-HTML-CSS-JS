@@ -7,6 +7,11 @@ let divcalcularerror=document.createElement("DIV");
 
 let documentfragment=document.createDocumentFragment();
 
+let contenedor_r=document.getElementById("cont");
+contenedor_r.classList.remove("contenedor-respuestas")
+
+let contrespuestas=document.getElementById("respuestas");
+contrespuestas.classList.remove(".respuestas")
 
 let div=document.createElement("DIV");
 let resultado=document.querySelector(".Reporte");
@@ -55,6 +60,8 @@ botonReinciar.addEventListener("click",(e)=>{
     let flex=document.querySelector(".flex-4");
     let contenedor_btn_calcular=document.querySelector(".contenedor-boton-calcular")
     let error=document.querySelector(".error_inputs");
+    let contenedor_r=document.getElementById("cont");
+    let contrespuestas=document.getElementById("respuestas");
 
     try{
         resultado.removeChild(verde)
@@ -73,7 +80,17 @@ botonReinciar.addEventListener("click",(e)=>{
         while (error.firstChild){
             error.removeChild(error.firstChild)
         }
-        	
+
+        while (contenedor_r.firstChild){
+            contenedor_r.removeChild(contenedor_r.firstChild)
+        }
+
+        while (contrespuestas.firstChild){
+            contrespuestas.removeChild(contrespuestas.firstChild)
+        }
+
+        contenedor_r.classList.remove("contenedor-respuestas")
+        contrespuestas.classList.remove("respuestas");
         
         flex.appendChild(boton);
     }
@@ -390,82 +407,41 @@ const calcularpromedio=(valoresnombre,valoresinput,cantidadnotas)=>{
 
 const reportepromedio=(lista)=>{
     let documentFragment=document.createDocumentFragment();
-    let tabla=document.getElementById("tabla");
-    tabla.classList.add("tabla")
-    tabla.innerHTML=("<tr><th>ALUMNO</th><th>PROMEDIO</th></tr>")
+    let contenedor_r=document.getElementById("cont");
+    let contrespuestas=document.getElementById("respuestas");
+
+    while (contenedor_r.firstChild){
+        contenedor_r.removeChild(contenedor_r.firstChild)
+    }
+
+    while (contrespuestas.firstChild){
+        contrespuestas.removeChild(contrespuestas.firstChild)
+    }
     
-    let contador=0
-    let trinicio="<tr>"
-    let trfinal="</tr>"
-    let listadatos=[]
-
-    for (z of lista){
-        contador++
-
-        for (x of z){
-            listadatos.push(x)
-
-        }
-
-    }
-
-    let listalimpios=[]
-    for (dato of listadatos){
-        let limpio=(`<td>${dato}</td>`)
-        listalimpios.push(limpio)
-
-    }
-    console.log(listalimpios)
-    let listaunidos=[]
-
-    for (x in lista){
-        let resultado=(listalimpios.slice(0,contador))
-        let datosolo;
-        for (r of resultado){
-            datosolo+=r;
-        }
-        listaunidos.push(datosolo)
-
-        
-        listalimpios.splice(0,contador)
-    }
-    console.log(listaunidos)
+    contenedor_r.classList.remove("contenedor-respuestas")
     
-    let listafinal=[]
-    for (x of listaunidos){
-        let dato="";
-        for (y in x){
-            if (y>8){
-                dato +=x[y];
-                
-            }
-        }
-        listafinal.push(dato)
-    }
+    contenedor_r.classList.add("contenedor-respuestas")
+
+    contenedor_r.innerHTML=("<h4>PROMEDIO</h4>")
+    
+    
+    contrespuestas.classList.remove("respuestas");
+    contrespuestas.classList.add("respuestas");
+    
    
-    // lista final es una lista con todo ya listo
     
-    
-    
-    // let contador2=contador*2
    
-        
-
-    // for (i=0; i<contador2;i++){
-    //     let valor=lista[i];
-    //     let valorlimpio=valor[i]
-    //     let datos=`<td >${valorlimpio}</td>`
-    //     tabla.innerHTML+=(datos);
-        // listadatos.push(datos)
-
-    // }
+    
+    for (x of lista){
+        let div =document.createElement("DIV")
+        div.classList.add("acomodo")
+        div.innerHTML+=(`${x}`)
+        contrespuestas.appendChild(div)
+    }
+    
+    
+    
   
-    // for (dato of listadatos){
-        
-    // }
-    
-    // console.log(listadatos)
-
     
 }
 

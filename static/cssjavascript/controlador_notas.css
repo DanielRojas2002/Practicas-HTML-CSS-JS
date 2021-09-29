@@ -134,10 +134,31 @@ input:focus{
     border-radius: 10px;
 }
 
-.tabla{
-    background: green;
-    margin: auto;
-    margin: 20px;
+.contenedor-respuestas{
+    background: greenyellow;
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #000;
+    margin: 50px;
+
+}
+
+.contenedor-respuestas h4{
     padding: 10px;
-    border: 2px solid #000;
+}
+
+.respuestas{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000;
+    margin: 50px;
+    text-align: center;
+
+}
+
+.acomodo{
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
 }
