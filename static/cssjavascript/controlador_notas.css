@@ -133,3 +133,11 @@ input:focus{
     color: #fff;
     border-radius: 10px;
 }
+
+.tabla{
+    background: green;
+    margin: auto;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000;
+}

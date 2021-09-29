@@ -389,7 +389,84 @@ const calcularpromedio=(valoresnombre,valoresinput,cantidadnotas)=>{
 }
 
 const reportepromedio=(lista)=>{
-    console.log(lista)
+    let documentFragment=document.createDocumentFragment();
+    let tabla=document.getElementById("tabla");
+    tabla.classList.add("tabla")
+    tabla.innerHTML=("<tr><th>ALUMNO</th><th>PROMEDIO</th></tr>")
+    
+    let contador=0
+    let trinicio="<tr>"
+    let trfinal="</tr>"
+    let listadatos=[]
+
+    for (z of lista){
+        contador++
+
+        for (x of z){
+            listadatos.push(x)
+
+        }
+
+    }
+
+    let listalimpios=[]
+    for (dato of listadatos){
+        let limpio=(`<td>${dato}</td>`)
+        listalimpios.push(limpio)
+
+    }
+    console.log(listalimpios)
+    let listaunidos=[]
+
+    for (x in lista){
+        let resultado=(listalimpios.slice(0,contador))
+        let datosolo;
+        for (r of resultado){
+            datosolo+=r;
+        }
+        listaunidos.push(datosolo)
+
+        
+        listalimpios.splice(0,contador)
+    }
+    console.log(listaunidos)
+    
+    let listafinal=[]
+    for (x of listaunidos){
+        let dato="";
+        for (y in x){
+            if (y>8){
+                dato +=x[y];
+                
+            }
+        }
+        listafinal.push(dato)
+    }
+   
+    // lista final es una lista con todo ya listo
+    
+    
+    
+    // let contador2=contador*2
+   
+        
+
+    // for (i=0; i<contador2;i++){
+    //     let valor=lista[i];
+    //     let valorlimpio=valor[i]
+    //     let datos=`<td >${valorlimpio}</td>`
+    //     tabla.innerHTML+=(datos);
+        // listadatos.push(datos)
+
+    // }
+  
+    // for (dato of listadatos){
+        
+    // }
+    
+    // console.log(listadatos)
+
+    
 }
 
 
