@@ -107,6 +107,17 @@ a:hover{
     color:#fff;
 }
 
+.footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (min-width:700px){
     body{
         display: grid;
