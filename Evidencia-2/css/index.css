@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    background:#000;
+}
+
+.header{
+    background-image: url("../recursos/head-index.png");
+    
+    background-repeat: no-repeat;
+    
+
+    grid-area: header;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+}
+
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.flex{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex div{
+    width: 300px;
+    height: 500px;
+   
+}
+.img-flex{
+    height: 200px;
+    width: 80%;
+    margin-top: 20px; 
+}
+
+.contenedor-img{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+
+}
+.flex-1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background:#fff;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: #000;
+    text-align: center;
+    margin:20px;
+}
+
+.contenido-flex p{
+    text-align: center;
+    margin: 20px;
+}
+
+.contenedor-a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    height: 20px;
+    width: 80%;
+}
+
+a:hover{
+    background: #000;
+    color: #fff;
+
+}
+
+.flex-1:hover{
+    background:linear-gradient(to top,transparent,#fff);
+    color:#fff;
+}
+
+@media only screen and (min-width:700px){
+    body{
+        display: grid;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+        background:#000;
+    }
+
+    .flex{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .flex-1:hover{
+        background:linear-gradient(to top,transparent,#fff);
+        color:#fff;
+    }
+
+    .header{
+        background-image: url("../recursos/head-index.png");
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        grid-area: header;
+    }
+
+    h3{
+        color: #000;
+        text-align: center;
+        
+    }
+    
+    .contenido-flex p{
+        text-align: center;
+        
+    }
+
+}
