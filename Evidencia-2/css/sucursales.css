@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "h1" "header" "main";
+}
+
+.titulo{
+    grid-area: h1;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.titulo h1{
+    align-self:end;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.titulo img{
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    height: 100px;
+    width: 100px;
+}
+header{
+    grid-area: header;
+}
+
+
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "caja1" "caja2" "caja3";
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+}
+
+nav{
+    background: yellow;
+    
+}
+
+
+
+.caja1{
+    margin-top: 20px;
+    grid-area: caja1;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.izq{
+    grid-area: izq;  
+}
+
+
+
+.der{
+    grid-area: der;
+    display: flex;
+    flex-direction: column;
+    background: chocolate;
+    
+    width: 500px;
+}
+
+.side{
+    grid-area: side;
+   
+}
+
+.contenido{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background: cornflowerblue;
+    overflow: auto;
+
+}
+
+.caja1 img{
+    height: 200px;
+    width: 300px;
+}
+
+.izq-img{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    padding: 20px;
+}
+
+.izq-titulo{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+    align-self: center;
+}
+
+.contenedor-side{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+   
+}
