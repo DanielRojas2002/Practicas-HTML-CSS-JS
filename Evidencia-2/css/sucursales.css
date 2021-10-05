@@ -91,17 +91,18 @@ nav{
 
 .side{
     grid-area: side;
+    margin-top: 20px;
    
 }
 
 .contenido{
     text-align: center;
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     
     overflow: auto;
     height: 220px;
-
+    
 }
 
 .caja1 img{
@@ -129,6 +130,7 @@ iframe{
     width: 100%;
     border: 1px solid #000;
     align-self: center;
+    
 }
 
 .contenedor-side{
