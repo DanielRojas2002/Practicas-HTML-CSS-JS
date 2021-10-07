@@ -7,7 +7,7 @@
 
 body{
     display: grid;
-    grid-template-areas: "h1" "header" "main" "main2";
+    grid-template-areas: "h1" "header" "main" "main2" "main3";
 }
 
 .titulo{
@@ -82,10 +82,16 @@ nav{
     margin: auto;
 }
 
+.seccion-flex-3{
+    grid-area: main3;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 .article-flex{
-    height: 540px;
+    height: 520px;
     width: 300px;
-    border: 2px solid #000;
     margin: 20px;
     display: grid;
     grid-template-areas: "img" "contenido" "horario";
@@ -96,7 +102,7 @@ h2{
     padding: 0;
 }
 .article-flex h4{
-    margin: 20px;
+    margin: 5px;
     
 }
 .imagen{
@@ -104,6 +110,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 100px;
 }
 img{
     align-self: flex-end;
@@ -115,6 +122,7 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-content: flex-start;
 }
 
 .horarios{
@@ -125,13 +133,13 @@ img{
     justify-content: center;
     align-self: flex-end;
 }
-.horarios table{
+table{
     margin: auto;
     background: cornflowerblue;
     width: 90%;
 }
 
-.horarios th,td{
+th,td{
     padding: 8px;
     text-align: center;
     border: 2px solid #000;
@@ -140,6 +148,19 @@ img{
 img{
     height: 100px;
     width: 50%;
+}
+
+hr{
+    color: #000;
+}
+
+.tabla_arriba{
+    margin: 10px;
+    grid-area: horario;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
 }
 
 
@@ -174,5 +195,14 @@ img{
         margin-left: 100px;
         margin-right: 100px;
 
+    }
+
+    .seccion-flex-3{
+        grid-area: main3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
