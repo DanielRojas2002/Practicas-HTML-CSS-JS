@@ -84,9 +84,10 @@ nav{
 
 
 .caja1{
-    margin-top: 20px;
+    margin-top: 10px;
     grid-area: caja1;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     
 }
@@ -108,18 +109,12 @@ nav{
 
 .side{
     grid-area: side;
-    margin-top: 20px;
+    
    
 }
 
 .contenido{
-    text-align: center;
-    margin: 40px;
-    padding: 20px;
-    
-    overflow: auto;
-    height: 220px;
-    
+    text-align: center; 
 }
 
 .caja1 img{
@@ -172,6 +167,29 @@ iframe{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .caja1{
+        margin-top: 20px;
+        grid-area: caja1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .side{
+        grid-area: side;
+        margin-top: 20px;
+       
+    }
+
+    .contenido{
+        text-align: center;
+        margin: 40px;
+        padding: 20px;
+        overflow: auto;
+        height: 220px;
+        
     }
 
 }
