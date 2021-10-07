@@ -71,46 +71,59 @@ nav{
 .seccion-flex{
     grid-area: main;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
 }
 
 .seccion-flex-2{
     grid-area: main2;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
 }
 
 .article-flex{
-    height: 500px;
+    height: 540px;
     width: 300px;
-    background: tomato;
+    border: 2px solid #000;
     margin: 20px;
     display: grid;
-    grid-template-areas: "video" "contenido" "horario";
+    grid-template-areas: "img" "contenido" "horario";
 }
 
-.article-flex p{
-    margin: 10px;
+h2{
+    margin: 0;
+    padding: 0;
 }
-.video{
-    grid-area: video;
+.article-flex h4{
+    margin: 20px;
+    
+}
+.imagen{
+    grid-area: img;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+img{
+    align-self: flex-end;
+}
 
 .contenido{
+    padding: 10px;
     grid-area: contenido;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.horario{
+.horarios{
+    margin: 10px;
     grid-area: horario;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-self: flex-end;
 }
 .horarios table{
     margin: auto;
@@ -126,7 +139,7 @@ nav{
 
 img{
     height: 100px;
-    width: 80%;
+    width: 50%;
 }
 
 
@@ -143,4 +156,23 @@ img{
         justify-content: space-around;
     }
 
+    .seccion-flex{
+        grid-area: main;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+    
+    .seccion-flex-2{
+        grid-area: main2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
 }
